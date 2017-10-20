@@ -1,0 +1,43 @@
+#!/bin/bash
+
+PACKAGE_NAME_TO_MAIN="server.ServerCommunicator"
+LIBS_FOLDER="libs"
+
+CODE_LOC="src/main/java/*"
+IP_ADDR="localhost"
+
+
+function remove {
+  echo "Removing ./bin folder"
+  rm -rf ./bin
+}
+
+function compile {
+  CODE_DIR_AUTO="$(find $CODE_LOC -name '*.java')"
+  mkdir -p bin
+  javac -d "./bin" -classpath "./$LIBS_FOLDER/*" $CODE_DIR_AUTO
+  if [ $? -eq 0 ]; then
+    echo "Server compilation successful."
+  else
+    echo "Server compilation FAILED."
+  fi;
+}
+
+function getIp {
+  IP_ADDR=$(ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1')
+}
+
+if [ "$1" == "run" ]; then
+  remove
+  compile
+  getIp
+  echo "IP address: "$IP_ADDR", Port Number:"$2
+  java -cp "./bin:./"$LIBS_FOLDER"/*" $PACKAGE_NAME_TO_MAIN $2
+elif [ "$1" == "clean" ]; then
+  remove
+elif [ "$1" == "-help" ]; then
+  echo "USAGE: run <port>; clean"
+else
+  echo "Invalid Command"
+  echo "USAGE: run <port>; clean"
+fi;

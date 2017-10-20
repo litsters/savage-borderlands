@@ -1,0 +1,99 @@
+body {
+    background-size: 100%;
+    background-image: url('res/img/borderlands_the_dust.jpg');
+    background-color: #cccccc;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 2vh 3vw;
+}
+
+.main {
+    height: 94vh;
+    width: 94vw;
+    padding: 0;
+}
+
+.backframe {
+    width: 94vw;
+    height: 94vh;
+    position: absolute;
+    z-index: -1;
+}
+
+.page {
+    padding-top: 8vh;
+    padding-left: 5vh;
+}
+
+.title {
+    font-family: 'Willow Body', Arial, sans-serif;
+    font-style: normal;
+    font-size: 3em;
+    position: absolute;
+    z-index: 1;
+    margin: 0;
+}
+
+.text {
+    font-family: 'Willow Body', Arial, sans-serif;
+}
+
+.nav-icon {
+    position: absolute;
+}
+.nav-icon:hover {
+    background-color: #ffff00;
+    border-radius: 25px;
+}
+
+.character-icon {
+    margin-left: 40vw;
+}
+
+.inventory-icon {
+    margin-left: 45vw;
+}
+
+.quest-icon {
+    margin-left: 50vw;
+}
+
+.codex-icon {
+    margin-left: 55vw;
+}
+
+.maps-icon {
+    margin-left: 60vw;
+}
+
+.admin-icon {
+    margin-left: 65vw;
+}
+
+.logout-icon {
+    margin-left: 70vw;
+}
+
+@font-face {
+    font-family: "Compacta Std Bold";
+    src: url('/res/font/CompactaStdBold/CompactaStdBold.eot');
+    src:
+    url('/res/font/CompactaStdBold/CompactaStdBold.otf')format('opentype'),
+    url('/res/font/CompactaStdBold/CompactaStdBold.svg')format('svg');
+}
+
+@font-face {
+    font-family: "Compacta Std Regular";
+    src: url('/res/font/CompactaStdRegular/CompactaStdRegular.eot');
+    src:
+    url('/res/font/CompactaStdRegular/CompactaStdRegular.otf')format('opentype'),
+    url('/res/font/CompactaStdRegular/CompactaStdRegular.svg')format('svg');
+}
+
+@font-face {
+    font-family: "Willow Body";
+    src: url('/res/font/WillowBody/willowbody_0-webfont.eot');
+    src:
+    url('/res/font/WillowBody/willowbody_0-webfont.otf')format('opentype'),
+    url('/res/font/WillowBody/willowbody_0-webfont.svg')format('svg');
+}
