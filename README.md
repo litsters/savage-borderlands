@@ -7,7 +7,7 @@ This project has no framework, which is by design.  It's not intended for anyone
 
 After cloning, open bash and do the following to run the server:
 
-1. Change directories to the RPGServer directory.
+1. Change directories to the directory housing the project.
 2. Execute the following command: rserver run 8080
 
 The program will then output confirmation that the server is running.  If you want to run on a different port, just type the number of the desired port instead of 8080.  8080 is the default, and if you enter an invalid number this is the one the server will run on.
