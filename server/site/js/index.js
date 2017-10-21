@@ -1,4 +1,4 @@
-angular.module('borderlandsApp', ['ngRoute'])
+angular.module('borderlandsApp', ['ngRoute', 'ngCookies'])
 .config(['$locationProvider', function($locationProvider){
     $locationProvider.hashPrefix('');
 }])
@@ -13,7 +13,7 @@ angular.module('borderlandsApp', ['ngRoute'])
     .when('/logout', {templateUrl: '/templates/logout.html'})
     .otherwise({redirectTo: '/'});
 }])
-.controller('borderlandsController', ['$scope', '$http', '$location', function($scope, $http, $location){
+.controller('borderlandsController', ['$scope', '$http', '$location', '$cookies', '$window', function($scope, $http, $location, $cookies, $window){
     $scope.$on('$routeChangeSuccess', function($currentRoute, $previousRoute){
         var title = null;
         switch($location.path()){
@@ -42,4 +42,15 @@ angular.module('borderlandsApp', ['ngRoute'])
         if(title !== null) $scope.section = title;
     });
     $scope.section = 'Character';
+    $scope.authenticate = function(){
+        var authCode = $cookies.get('rpgauth');
+        if(authCode === undefined){
+            $cookies.put('rpgredirect', $window.location.href);
+            $window.location.href = '/login.html';
+        } else {
+            alert('getting character info');
+        }
+    }
+    $scope.authenticate();
 }]);
+

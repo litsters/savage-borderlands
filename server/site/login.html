@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="shortcut icon" href="/res/img/favicon.ico" type="image/x-icon">
+
+    <script src="/node_modules/angular/angular.min.js"></script>
+    <script src="/node_modules/angular-route/angular-route.min.js"></script>
+    <script src="/node_modules/angular-cookies/angular-cookies.min.js"></script>
+
+    <script type="text/javascript" src="/js/login.js"></script>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body ng-app="login" ng-controller="loginController" style="background-image: url('/res/img/borderlands_login_background.jpg');">
+    <div ng-repeat="x in characterList" class="loginOption" ng-click="selectCharacter($index)">
+        <img src="/res/img/borderlands_ui_small_frame.png" class="loginBack">
+        <img src="/res/portraits/{{ x.portrait }}" height="200" width="200" class="loginPortrait">
+        <div style="display: inline; position: absolute;">
+            <h1 style="font-family: 'Willow Body', Arial, sans-serif; color: white; margin-left: 1vw; font-size: 3em;">{{ x.name }}</h1>
+            <h3 style="font-family: 'Willow Body', Arial, sans-serif; color: white; margin-left: 5vw;">as the</h3>
+            <h2 style="font-family: 'Willow Body', Arial, sans-serif; color: white; margin-left: 4vw;">{{ x.class }}</h2>
+        </div>
+    </div>
+    <div class="overlay" ng-show="overlayActive">
+        <div class="alert">
+            <h1 class="text" style="width: 766px; text-align: center;">PASSWORD</h1>
+            <h3 class="text" style="width: 766px; text-align: center;">for</h3>
+            <h2 class="text" style="width: 766px; text-align: center;">{{ selectedCharacter.name }}</h2>
+            <input style="width: 400px; margin-left: 170px; font-size: 25px; text-align: center; background-color: #FFA241; border-style: solid; border-radius: 0; border-width: 5px; border-color: black;" type="password" ng-model="passwordAttempt"><br>
+            <button style="margin-top: 30px; margin-left: 200px;" type="button" class="alert-button" ng-click="login()">Log In</button>
+            <button style="margin-left: 10px;" type="button" class="alert-button" ng-click="cancelOverlay()">Cancel</button>
+            <h2 class="text" style="text-align: center; margin-bottom: 10px;">{{ message }}</h2>
+        </div>
+    </div>
+</body>
+</html>
