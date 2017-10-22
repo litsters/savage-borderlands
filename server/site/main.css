@@ -80,6 +80,17 @@ body {
     padding: 15px 32px;
 }
 
+.newCharacterDrop {
+    position: absolute;
+    z-index: 50;
+    width: 505px;
+    height: 354px;
+    margin-top: -355px;
+}
+.newCharacterDrop:hover {
+    margin-top: -300px;
+}
+
 .page {
     padding-top: 8vh;
     padding-left: 5vh;

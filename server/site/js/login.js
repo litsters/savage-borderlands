@@ -46,11 +46,16 @@ angular.module('login', ['ngCookies'])
                 $cookies.remove('rpgredirect');
                 $window.location.href = $scope.returnURL;
             } else {
-                $scope.message = 'Wrong password';
+                $scope.message = 'WRONG PASSWORD';
             }
         }, function(error){
-            $scope.message = 'Couldn\'t verify password';
+            $scope.message = 'COULDN\'T VERIFY PASSWORD';
         });
+    }
+
+    $scope.newCharacter = function(){
+        $cookies.put('rpgredirect', $scope.returnURL);
+        $window.location.href = '/creator.html';
     }
 
     $scope.getCharacters();

@@ -14,6 +14,10 @@
 
 </head>
 <body ng-app="login" ng-controller="loginController" style="background-image: url('/res/img/borderlands_login_background.jpg');">
+    <div class="newCharacterDrop">
+        <img style="vertical-align: bottom;" src="/res/img/borderlands_ui_small_frame_reverse.png">
+        <h2 class="text" style="position: absolute; bottom: 0; left: 0; z-index: 60; color: white; margin-left: 20px; padding-bottom: 10px; text-align: center; width: 505px;" ng-click="newCharacter()">NEW CHARACTER</h2>
+    </div>
     <div ng-repeat="x in characterList" class="loginOption" ng-click="selectCharacter($index)">
         <img src="/res/img/borderlands_ui_small_frame.png" class="loginBack">
         <img src="/res/portraits/{{ x.portrait }}" height="200" width="200" class="loginPortrait">
@@ -27,11 +31,11 @@
         <div class="alert">
             <h1 class="text" style="width: 766px; text-align: center;">PASSWORD</h1>
             <h3 class="text" style="width: 766px; text-align: center;">for</h3>
-            <h2 class="text" style="width: 766px; text-align: center;">{{ selectedCharacter.name }}</h2>
+            <h1 class="text" style="width: 766px; text-align: center;">{{ selectedCharacter.name }}</h1>
             <input style="width: 400px; margin-left: 170px; font-size: 25px; text-align: center; background-color: #FFA241; border-style: solid; border-radius: 0; border-width: 5px; border-color: black;" type="password" ng-model="passwordAttempt"><br>
-            <button style="margin-top: 30px; margin-left: 200px;" type="button" class="alert-button" ng-click="login()">Log In</button>
+            <button style="margin-top: 20px; margin-left: 200px;" type="button" class="alert-button" ng-click="login()">Log In</button>
             <button style="margin-left: 10px;" type="button" class="alert-button" ng-click="cancelOverlay()">Cancel</button>
-            <h2 class="text" style="text-align: center; margin-bottom: 10px;">{{ message }}</h2>
+            <h2 class="text" style="color: red; text-align: center; margin-bottom: 20px;">{{ message }}</h2>
         </div>
     </div>
 </body>

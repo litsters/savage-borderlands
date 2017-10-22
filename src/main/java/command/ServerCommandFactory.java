@@ -13,6 +13,12 @@ public class ServerCommandFactory implements CommandFactory {
         switch(commandData.getType()){
             case GET_CHARACTER_LIST:
                 return new GetCharacterListCommand();
+            case CREATE_CHARACTER:
+                String name = commandData.getValue("name");
+                String klass = commandData.getValue("klass");
+                String portrait = commandData.getValue("portrait");
+                String password = commandData.getValue("password");
+                return new CreateCharacterCommand(name, klass, portrait, password);
             default:
                 throw new NoSuchCommandException("Unrecognized command: " + commandData.getType());
         }
