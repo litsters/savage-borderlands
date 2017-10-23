@@ -1,5 +1,8 @@
 package command;
 
+import database.GameFacade;
+import model.character.InvalidInputException;
+
 public class CreateCharacterCommand implements Command {
     private String name;
     private String klass;
@@ -15,9 +18,14 @@ public class CreateCharacterCommand implements Command {
 
     @Override
     public CommandResult execute() {
-        // TODO Make this actually do something
         CommandResult result = new CommandResult();
-        result.addValue("message", "success");
+        try{
+            GameFacade.get().addCharacter(name, klass, portrait, password);
+            result.addValue("message", "success");
+        }catch(InvalidInputException e){
+            result.addValue("message", e.getMessage());
+        }
+
         return result;
     }
 }

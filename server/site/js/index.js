@@ -48,7 +48,7 @@ angular.module('borderlandsApp', ['ngRoute', 'ngCookies'])
             $cookies.put('rpgredirect', $window.location.href);
             $window.location.href = '/login.html';
         } else {
-            alert('getting character info');
+            alert('authcode is ' + authCode);
         }
     }
     $scope.authenticate();

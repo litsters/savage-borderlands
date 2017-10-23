@@ -10,21 +10,16 @@ angular.module('login', ['ngCookies'])
     $scope.message = '';
 
     $scope.getCharacters = function(){
-        $timeout(1000).then(function(success){
-            var temp = [];
-            temp.push({
-                name: 'Sir Gallahad',
-                portrait: 'vault_symbol.jpg',
-                class: 'Pompadour'
-            });
-            temp.push({
-                name: 'Aaron Kimioku',
-                portrait: 'vault_symbol.jpg',
-                class: 'Unicorn'
-            });
-            $scope.characterList = temp;
+        var command = {
+            type: 'GET_CHARACTER_LIST'
+        };
+        $http.post('/command', command).then(function(success){
+            if(success.data.values.message !== undefined) alert(success.data.values.message);
+            else {
+                $scope.characterList = success.data.values.characters;
+            }
         }, function(error){
-            alert('an error occurred');
+            alert('A server error occurred and the characters couldn\'t be loaded.');
         });
     }
 
@@ -40,17 +35,35 @@ angular.module('login', ['ngCookies'])
     }
 
     $scope.login = function(){
-        $timeout(1000).then(function(success){
-            if($scope.passwordAttempt === 'asdf'){
-                $cookies.put('rpgauth', 'authcode');
+        var command = {
+            type: 'LOGIN',
+            stringValues: {
+                name: $scope.selectedCharacter.name,
+                passwordAttempt: $scope.passwordAttempt
+            }
+        };
+        $http.post('/command', command).then(function(success){
+            if(success.data.values.message !== undefined) $scope.message = success.data.values.message;
+            else {
+                $cookies.put('rpgauth', success.data.values.authcode);
                 $cookies.remove('rpgredirect');
                 $window.location.href = $scope.returnURL;
-            } else {
-                $scope.message = 'WRONG PASSWORD';
             }
         }, function(error){
             $scope.message = 'COULDN\'T VERIFY PASSWORD';
         });
+
+//        $timeout(1000).then(function(success){
+//            if($scope.passwordAttempt === 'asdf'){
+//                $cookies.put('rpgauth', 'authcode');
+//                $cookies.remove('rpgredirect');
+//                $window.location.href = $scope.returnURL;
+//            } else {
+//                $scope.message = 'WRONG PASSWORD';
+//            }
+//        }, function(error){
+//            $scope.message = 'COULDN\'T VERIFY PASSWORD';
+//        });
     }
 
     $scope.newCharacter = function(){

@@ -19,6 +19,12 @@ public class ServerCommandFactory implements CommandFactory {
                 String portrait = commandData.getValue("portrait");
                 String password = commandData.getValue("password");
                 return new CreateCharacterCommand(name, klass, portrait, password);
+            case GET_PORTRAITS:
+                return new GetPortraitsCommand();
+            case LOGIN:
+                name = commandData.getValue("name");
+                String passwordAttempt = commandData.getValue("passwordAttempt");
+                return new LoginCommand(name, passwordAttempt);
             default:
                 throw new NoSuchCommandException("Unrecognized command: " + commandData.getType());
         }

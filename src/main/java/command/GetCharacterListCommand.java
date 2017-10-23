@@ -1,11 +1,15 @@
 package command;
 
+import database.GameFacade;
+import model.character.CharacterSummary;
+
 public class GetCharacterListCommand implements Command {
+
     @Override
     public CommandResult execute() {
         CommandResult result = new CommandResult();
-        String[] mock = new String[]{"character1", "character2"};
-        result.addValue("characters", mock);
+        CharacterSummary[] characters = GameFacade.get().getCharacterList();
+        result.addValue("characters", characters);
         return result;
     }
 }
