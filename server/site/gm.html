@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Savage Borderlands</title>
+    <link rel="shortcut icon" href="/res/img/favicon.ico" type="image/x-icon">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="/node_modules/angular/angular.js"></script>
+    <script src="/node_modules/angular-route/angular-route.min.js"></script>
+    <script src="/node_modules/angular-cookies/angular-cookies.min.js"></script>
+
+    <script src="/gm/index.js"></script>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body ng-app="gmApp" ng-controller="gmController" style="background-image: url('/res/img/borderlands_the_dust.jpg');">
+
+<h1>GM Screen</h1>
+
+<div class="main">
+    <img src="/res/img/borderlands_ui_full_blank.png" class="backframe">
+    <h1 class="title" style="padding-top: 0vh; padding-left: 14vw; padding-right: 14vw;">{{ section }}</h1>
+    <a href="#/"><img src="/res/img/character_icon.png" class="nav-icon character-icon"></a>
+    <a href="#/"><img src="/res/img/inventory_icon.png" class="nav-icon inventory-icon"></a>
+    <a href="#/"><img src="/res/img/quest_icon.png" class="nav-icon quest-icon"></a>
+    <a href="#/"><img src="/res/img/codex_icon.png" class="nav-icon codex-icon"></a>
+    <a href="#/"><img src="/res/img/maps_icon.png" class="nav-icon maps-icon"></a>
+    <a href="#/"><img src="/res/img/admin_icon.png" class="nav-icon admin-icon"></a>
+    <a href="#/"><img src="/res/img/logout_icon.png" class="nav-icon logout-icon"></a>
+
+    <div class="page" ng-view></div>
+</div>
+
+</body>
+</html>

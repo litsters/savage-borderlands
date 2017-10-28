@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
 import model.character.Character;
 
 public class Game {
@@ -17,6 +18,10 @@ public class Game {
 
     private Game(){
         characters = new HashMap<>();
+    }
+
+    public void loadGame(Game other){
+        this.characters = other.characters;
     }
 
     public void addCharacter(Character character){
