@@ -13,4 +13,10 @@ public class CommandResult {
     public void addValue(String key, Object value){
         values.put(key, value);
     }
+
+    public Object getValue(String key) throws MissingFieldException{
+        Object value = values.get(key);
+        if(value == null) throw new MissingFieldException("No such field: " + key);
+        else return value;
+    }
 }

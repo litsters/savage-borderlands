@@ -5,6 +5,7 @@ import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
 import command.*;
 import database.serialization.Serializer;
+import persistence.PersistenceProvider;
 
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -20,6 +21,7 @@ public class CommandHandler implements HttpHandler {
             CommandData commandData = (CommandData)Serializer.get().deserialize(reader, CommandData.class);
             Command command = ServerCommandFactory.get().generateCommand(commandData);
             commandResult = command.execute();
+            PersistenceProvider.get().addCommand(commandData);
         }catch(NoSuchCommandException | JsonParseException | MissingFieldException e){
             commandResult = new CommandResult();
             commandResult.addValue("error", e);

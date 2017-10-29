@@ -1,6 +1,7 @@
 package server;
 
 import com.sun.net.httpserver.HttpServer;
+import persistence.PersistenceProvider;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
@@ -23,6 +24,7 @@ public class ServerCommunicator {
     private void run(){
         setupServer(PORT_NUMBER, MAX_WAITING_CONNECTIONS);
         setupContext();
+        setupDatabase();
         server.start();
     }
 
@@ -37,6 +39,11 @@ public class ServerCommunicator {
         }
 
         server.setExecutor(null); // use the default executor
+    }
+
+    private void setupDatabase(){
+        PersistenceProvider.get().setSaveFrequency(5);
+        PersistenceProvider.get().loadGame();
     }
 
     private void setupContext(){

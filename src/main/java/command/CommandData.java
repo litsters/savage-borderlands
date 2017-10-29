@@ -20,4 +20,8 @@ public class CommandData {
         if(value == null) throw new MissingFieldException("Missing field " + key);
         else return value;
     }
+
+    public void addStringValue(String key, String value){
+        stringValues.put(key, value);
+    }
 }

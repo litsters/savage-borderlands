@@ -6,5 +6,6 @@ public enum CommandType {
     GET_CHARACTER_LIST,
     CREATE_CHARACTER,
     GET_PORTRAITS,
-    LOGIN
+    LOGIN,
+    DUMMY
 }

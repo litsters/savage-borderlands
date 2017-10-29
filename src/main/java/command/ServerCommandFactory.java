@@ -25,6 +25,8 @@ public class ServerCommandFactory implements CommandFactory {
                 name = commandData.getValue("name");
                 String passwordAttempt = commandData.getValue("passwordAttempt");
                 return new LoginCommand(name, passwordAttempt);
+            case DUMMY:
+                return new DummyCommand();
             default:
                 throw new NoSuchCommandException("Unrecognized command: " + commandData.getType());
         }

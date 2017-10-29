@@ -1,6 +1,6 @@
 package persistence;
 
-import command.CommandData;
+import command.*;
 import database.fileStructure.PathMaster;
 import database.serialization.Serializer;
 import model.game.Game;
@@ -37,19 +37,23 @@ public class PersistenceProvider {
     }
 
     public void loadGame(){
-        File persistenceFile = new File(PathMaster.getPersistenceRoot() + GAME_FILENAME);
-        if(!persistenceFile.exists()) return;
         try{
-            FileReader reader = new FileReader(persistenceFile);
-            Game loadedGame = (Game)Serializer.get().deserialize(reader, Game.class);
-            reader.close();
+            Game loadedGame = (Game)loadPersistedObject(GAME_FILENAME, Game.class);
             Game.get().loadGame(loadedGame);
-
-
-        }catch(IOException e){
-            e.printStackTrace();
+            CommandHistory loadedHistory = (CommandHistory)loadPersistedObject(COMMAND_HISTORY_FILENAME, CommandHistory.class);
+            if(loadedHistory != null){
+                List<CommandData> commands = loadedHistory.getCommands();
+                for(CommandData c : commands){
+                    Command command = ServerCommandFactory.get().generateCommand(c);
+                    command.execute();
+                }
+                this.commandHistory = loadedHistory;
+            }
+        }catch(MissingPersistedObjectException e){
+            System.err.println("No saved game found.");
+        }catch(NoSuchCommandException | MissingFieldException e){
+            System.err.println("Unusable command during loading.");
         }
-
     }
 
     public void clearGame(){
@@ -94,14 +98,12 @@ public class PersistenceProvider {
         if(!persistenceFile.exists()) return null;
         try{
             FileReader reader = new FileReader(persistenceFile);
-            Game loadedGame = (Game)Serializer.get().deserialize(reader, Game.class);
+            Object loadedObject = Serializer.get().deserialize(reader, klass);
             reader.close();
-            Game.get().loadGame(loadedGame);
-
-
+            return loadedObject;
         }catch(IOException e){
             e.printStackTrace();
+            return null;
         }
-        return null;
     }
 }

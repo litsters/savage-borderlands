@@ -21,6 +21,7 @@ public class Game {
     }
 
     public void loadGame(Game other){
+        if(other == null) return;
         this.characters = other.characters;
     }
 
