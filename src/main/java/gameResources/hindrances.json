@@ -1,0 +1,254 @@
+{
+  "hindrances": [
+    {
+      "name": "All Thumbs",
+      "level": "MINOR",
+      "details": "Some people just aren't good with modern devices.  Characters with this drawback suffer a -2 penalty to the Repair skill at all times.  In addition, when a hero uses a mechanical or electronic device, a roll of 1 on his skill die (regardless of his Wild Die) means the device is broken.  The damage usually requires a Repair roll at -2 and 1d6 hours to fix."
+    },
+    {
+      "name": "Anemic",
+      "level": "MINOR",
+      "details": "Your hero is particularly susceptible to sickness, disease, environmental effects, and fatigue.  He subtracts 2 from all Vigor rolls made to resist Fatigue checks, poison, disease, and the like."
+    },
+    {
+      "name": "Arrogant",
+      "level": "MAJOR",
+      "details": "Your hero doesn't think he's the best--he knows he is.  Whatever it is--swordsmanship, kung fu, running--there is no one who can touch his skills and he flaunts it every chance he gets.  Winning just isn't enough for your hero.  He must completely dominate his opponent.  Anytime there is even a shadow of a doubt as to who is the better, he must humiliate his opponent and prove he can snatch victory any time he wishes.  He is the kind of man who disarms an opponent in a duel just so he can pick the sword up and hand it back with a smirk.  Arrogant heroes always look for the \"master\" in battle, attacking lesser minions only if they get in the way."
+    },
+    {
+      "name": "Bad Eyes",
+      "level": "MINOR",
+      "details": "Your hero's eyes just aren't what they used to be, but they have glasses.  Should he lose his glasses (generally a 50% chance when he's wounded, or no chance with a \"nerd-strap\"), he suffers a -2 penalty to any Trait roll made to shoot or Notice something more than 5\" (10 yards) distant."
+    },
+    {
+      "name": "Bad Eyes",
+      "level": "MAJOR",
+      "details": "Your hero's eyes just aren't what they used to be, and glasses are unavailable to help them.  He must subtract 2 from Trait rolls made to attack or notice things 5\" or more away."
+    },
+    {
+      "name": "Bad Luck",
+      "level": "MAJOR",
+      "details": "Your hero is a little less lucky than most.  He gets one less benny per game session than normal.  A character cannot have both Bad Luck and Good Luck."
+    },
+    {
+      "name": "Big Mouth",
+      "level": "MINOR",
+      "details": "Loose lips sink ships, as the saying goes.  Your hero's could drown an armada.  Your character can't keep a secret very well.  He reveals plans and gives away things best kept among friends, usually at the worst possible times."
+    },
+    {
+      "name": "Blind",
+      "level": "MAJOR",
+      "details": "Your hero is completely without sight.  He suffers a -6 to all physical tasks that require vision--which is most everything, and -2 to most social tasks as he can't \"read\" those he's interacting with as well as others.  On the plus side, Blind characters gain their choice of a free Edge to compensate for this particularly deadly Hindrance."
+    },
+    {
+      "name": "Bloodthirsty",
+      "level": "MAJOR",
+      "details": "Your hero never takes prisoners unless under the direct supervision of a superior.  This can cause major problems in a military campaign unless your superiors condone that sort of thing.  Your hero suffers -4 to his Charisma, but only if his cruel habits are known."
+    },
+    {
+      "name": "Cautious",
+      "level": "MINOR",
+      "details": "Some folks gather too much intelligence.  This character personifies over-cautiousness.  He never makes rash decisions and likes to plot things out in detail long before any action is taken."
+    },
+    {
+      "name": "Clueless",
+      "level": "MAJOR",
+      "details": "Your hero isn't as aware of his world as most others.  He suffers a -2 to Common Knowledge rolls."
+    },
+    {
+      "name": "Code of Honor",
+      "level": "MAJOR",
+      "details": "Honor is very important to your character.  He keeps his word, won't abuse or kill prisoners, and generally tries to operate within his world's particular notion of proper gentlemanly or ladylike behavior."
+    },
+    {
+      "name": "Curious",
+      "level": "MAJOR",
+      "details": "It killed the cat, and it might kill your hero as well.  Curious characters are easily dragged into any adventure.  They have to check out everything and always want to know what's behind a potential mystery."
+    },
+    {
+      "name": "Death Wish",
+      "level": "MINOR",
+      "details": "Having a death wish doesn't mean your hero is suicidal--but he does want to die after completing some important goal.  Maybe he wants revenge for the murder of his family, or maybe he's dying from disease and wants to go out in a blaze of glory.  He won't throw his life away for no reason, but when there's a chance to complete his goal, he'll do anything--and take any risk--to achieve it."
+    },
+    {
+      "name": "Doubting Thomas",
+      "level": "MINOR",
+      "details": "Some people don't believe in the supernatural until they're halfway down some creature's gullet.  Doubting Thomases are skeptics who try their best to rationalize supernatural events.  Even once a Doubting Thomas realizes the supernatural exists, he still tries to rationalize weird events, following red herrings or ignoring evidence.  Doubting Thomases suffer a -2 to their Guts checks when confronted with undeniable supernatural horror."
+    },
+    {
+      "name": "Elderly",
+      "level": "MAJOR",
+      "details": "Your hero is getting on in years, but he's not quite ready for the nursing home.  His Pace is reduced by 1, and his Strength and Vigor drop a die type to a minimum of d4, and cannot be raised thereafter.  On the plus side, the wisdom of his years grants the hero 5 extra skill points that may be used for any skills linked to Smarts."
+    },
+    {
+      "name": "Enemy",
+      "level": "MINOR",
+      "details": "Someone out there hates your hero and wants him dead.  The value of the Hindrance depends on how powerful the enemy is and how often he might show up.  A Minor Enemy might be a lone gunslinger out for vengeance.  If the enemy is one day defeated, the GM should gradually work in a replacement, or the hero may buy off the Hindrance by sacrificing a leveling opportunity."
+    },
+    {
+      "name": "Enemy",
+      "level": "MAJOR",
+      "details": "Someone out there hates your hero and wants him dead.  The value of the Hindrance depends on how powerful the enemy is and how often he might show up.  A Major Enemy might be a supernatural gunslinger with a hate-on for your hero.  If the enemy is one day defeated, the GM should gradually work in a replacement, or the hero may buy off the Hindrance by sacrificing a leveling opportunity."
+    },
+    {
+      "name": "Greedy",
+      "level": "MINOR",
+      "details": "Your miserly hero measures his worth in treasure.  If a Minor Hindrance, he argues bitterly over any loot acquired during play."
+    },
+    {
+      "name": "Greedy",
+      "level": "MAJOR",
+      "details": "Your miserly hero measures his worth in treasure.  If a Major Hindrance, he fights over anything he considers unfair, and may even kill for his \"fair share.\""
+    },
+    {
+      "name": "Habit",
+      "level": "MINOR",
+      "details": "Your warrior has an annoying and constant habit of some sort.  Maybe she picks her nose, says \"y'know\" in every sentence, or chews gum like it's going out of style.  A Minor Habit irritates those around her but isn't dangerous.  Your hero suffers a -1 Charisma."
+    },
+    {
+      "name": "Habit",
+      "level": "MAJOR",
+      "details": "Your warrior has an annoying and constant habit of some sort.  Maybe she picks her nose, says \"y'know\" in every sentence, or chews gum like it's going out of style.  A Major Habit is a physical or mental addiction of some sort that is debilitating or possibly even deadly.  This includes drug use, chronic drinking, or perhaps evenan addiction to virtual reality in a high-tech setting.  A character who doesn't get his fix must make a Fatigue check every 24 hours thereafter.  The first failed roll makes the character Fatigued, then Exhausted.  The final result is a coma for hard drug use, or a bad case of the shakes for things like alcohol or VR.  Medical care may ease the symptoms.  Otherwise the victim must live with the penalties for 1d6 days.  Afterwards, the hero must buy off the Hindrance by sacrificing an opportunity to level up, or he eventually falls back into his dependency."
+    },
+    {
+      "name": "Hard of Hearing",
+      "level": "MINOR",
+      "details": "Characters who have lost some of their hearing have this disadvantage.  As a Minor Hindrance, it subtracts 2 from all Notice rolls made to hear, including awaking due to loud noises."
+    },
+    {
+      "name": "Hard of Hearing",
+      "level": "MAJOR",
+      "details": "Characters who have lost all of their hearing have this disadvantage.  As a Major Hindrance, it means the character is deaf.  She cannot hear and automatically fails all Notice rolls that depend on hearing."
+    },
+    {
+      "name": "Heroic",
+      "level": "MAJOR",
+      "details": "Your hero never says no to a person in need.  She doesn't have to be happy about it, but she always comes to the rescue of those she feels can't help themselves.  She's the first one to run into a burning building, usually agrees to hunt monsters for little or no pay, and is generally a pushover for a sob story."
+    },
+    {
+      "name": "Illiterate",
+      "level": "MINOR",
+      "details": "Your hero cannot read.  He can probably sign his name and knows what a STOP sign says, but can do little else.  He also doesn't know much about math either.  He can probably do 2+2=4, but multiplication and the like are beyond him.  Illiterates can't read or write in any language, by the way, no matter how many they actually speak."
+    },
+    {
+      "name": "Lame",
+      "level": "MAJOR",
+      "details": "A past wound has nearly crippled your hero.  His basic Pace is reduced by 2 and he rolls only a d4 for running rolls.  A character's Pace may  never be reduced below 1."
+    },
+    {
+      "name": "Loyal",
+      "level": "MINOR",
+      "details": "Your character may not be a hero, but he'd give his life for his friends.  This character can never leave a man behind if there's any chance at all he could help."
+    },
+    {
+      "name": "Mean",
+      "level": "MINOR",
+      "details": "Your hero is ill-tempered and disagreeable.  No one really likes him, and he has trouble doing anything kind for anyone else.  He must be paid for his troubles and doesn't even accept awards graciously.  Your hero suffers -2 to his Charisma."
+    },
+    {
+      "name": "Obese",
+      "level": "MINOR",
+      "details": "Particularly large people often have great difficulty in dangerous physical situations.  Those who carry their weight well have the Brawny Edge.  Those who don't handle it well are Obese.  A character cannot be both Brawny and Obese.  An Obese hero adds 1 to his Toughness, but his Pace is decreased by 1 and his running die is a d4.  Obese characters may also have difficulty finding armor or clothing that fits, fitting into tight spaces, or even riding in confined spaces such as coach airplane seats or compact cars."
+    },
+    {
+      "name": "One Arm",
+      "level": "MAJOR",
+      "details": "Whether by birth or battle, your hero has lost an arm.  Fortunately, his other arm is (now) his \"good\" one.  Tasks that require two hands, such as Climbing, suffer a -4 modifier."
+    },
+    {
+      "name": "One Eye",
+      "level": "MAJOR",
+      "details": "Your hero has had an eye gouged out by some nefarious villain in his past.  If he doesn't wear a patch or buy a glass replacement (typically $500), he suffers a -1 to his Charisma for the grotesque wound.  He suffers -2 to any Trait rolls that require depth perception, such as Shooting or Throwing, jumping from one mast to another, and so on."
+    },
+    {
+      "name": "One Leg",
+      "level": "MAJOR",
+      "details": "With a peg, One Leg acts exactly like the Lame Hindrance, reducing Pace by 2 and running rolls are now a d4.  Without a peg, the character's Pace is 2 and he can never run.  He also suffers -2 to Traits that require mobility, such as Climbing and Fighting.  A character with one leg also suffers a -2 penalty to his Swimming skill (and Pace)."
+    },
+    {
+      "name": "Overconfident",
+      "level": "MAJOR",
+      "details": "There's nothing out there your hero can't defeat.  At least that's what he thinks.  He believes he can do most anything and never wants to retreat from a challenge.  He's not suicidal, but he certainly takes on more than common sense dictates."
+    },
+    {
+      "name": "Pacifist",
+      "level": "MINOR",
+      "details": "Your hero absolutely despises violence.  Minor Pacifism means he only fights when given no other choice, and never allows the killing of prisoners or other defenseless victims."
+    },
+    {
+      "name": "Pacifist",
+      "level": "MAJOR",
+      "details": "Your hero absolutely despises violence.  Major Pacifists won't fight living characters under any circumstances.  They may defend themselves, but won't do anything to permanently harm sentient, living creatures.  Note that undeniably evil creatures, undead, demons and the like, are fair game, however.  A Major Pacifist might also fight with nonlethal methods, such as with his fists.  Such characters only do so when obviously threatened, however."
+    },
+    {
+      "name": "Phobia",
+      "level": "MINOR",
+      "details": "Phobias are overwhelming and irrational fears that stay with a hero for the rest of his life.  Whenever a character is in the presence of his phobia, he subtracts 2 from all his Trait tests as a Minor Hindrance.  Phobias shouldn't be too obvious--everyone should be afraid of vampires, for example, so it's not a phobia--it's common sense.  Instead, the phobia usually centers on some random element the mind focused on during whatever encounters caused such a fright.  Remember, phobias are irrational fears."
+    },
+    {
+      "name": "Phobia",
+      "level": "MAJOR",
+      "details": "Phobias are overwhelming and irrational fears that stay with a hero for the rest of his life.  Whenever a character is in the presence of his phobia, he subtracts 4 from all his Trait tests as a Major Hindrance.  Phobias shouldn't be too obvious--everyone should be afraid of vampires, for example, so it's not a phobia--it's common sense.  Instead, the phobia usually centers on some random element the mind focused on during whatever encounters caused such a fright.  Remember, phobias are irrational fears."
+    },
+    {
+      "name": "Psycho",
+      "level": "MAJOR",
+      "details": "The ubiquity of eridium on Pandora, society's constant instability, and Atlas, Dahl, and Hyperion weird experiments on unwilling people can claim a lot of victims on the planet.  Kings among them are those who are called Psychos.  They can be paranoid, permanently hallucinating, sadic, masochistic, real psychopaths, or a glorious mix of all these, but one thing's for sure: they're raging mad.  A Psycho character takes a -2 modifier to his Charisma due to his complete lack of self-control and inability to conform to Pandorian society's rules, as permissive as they are.  More, the Psycho must make a Spirit roll whenever he finds himself in a tense situation (negotiation, infiltration, etc).  If he fails this roll, he must choose the most immediate violent solution available.  On the other hand, Psycho characters are the only ones who can take some of the weirdest edges in Savage Borderlands."
+    },
+    {
+      "name": "Small",
+      "level": "MAJOR",
+      "details": "Your character is either very skinny, very short, or both relative to his particular race.  Subtract 1 from your hero's Toughness for his reduced stature."
+    },
+    {
+      "name": "Stubborn",
+      "level": "MINOR",
+      "details": "Your hero always wants his way and never admits he's wrong.  Even when it's painfully obvious he made a mistake, he tries to justify it with half-truths and rationalizations."
+    },
+    {
+      "name": "Ugly",
+      "level": "MINOR",
+      "details": "Your hero hit more than a few ugly sticks on his way down the tree of life.  His Charisma is lowered by 2, and he is generally shunned by members of the opposite sex."
+    },
+    {
+      "name": "Vengeful",
+      "level": "MINOR",
+      "details": "Your character always attempts to right a wrong he feels was done to him.  As a Minor Hindrance, he usually seeks vengeance legally."
+    },
+    {
+      "name": "Vengeful",
+      "level": "MAJOR",
+      "details": "Your character always attempts to right a wrong he feels was done to him.  As a Major Hindrance, he'll kill to see it done."
+    },
+    {
+      "name": "Vow",
+      "level": "MINOR",
+      "details": "The character has a vow of some sort.  Whether it's Major or Minor depends on the Vow itself.  Some may have Vows to particular orders or causes, to the Hippocratic Oath, to rid the world of evil, and so on.  The danger in fulfilling the Vow and how often it might come into play determines the level of the Hindrance.  Whatever the Vow, it's only a Hindrance if it actually comes into play from time to time and causes the character some discomfort."
+    },
+    {
+      "name": "Vow",
+      "level": "MAJOR",
+      "details": "The character has a vow of some sort.  Whether it's Major or Minor depends on the Vow itself.  Some may have Vows to particular orders or causes, to the Hippocratic Oath, to rid the world of evil, and so on.  The danger in fulfilling the Vow and how often it might come into play determines the level of the Hindrance.  Whatever the Vow, it's only a Hindrance if it actually comes into play from time to time and causes the character some discomfort."
+    },
+    {
+      "name": "Wanted",
+      "level": "MINOR",
+      "details": "Your hero has committed some crime in his past and will be arrested if discovered by the authorities.  This assumes the setting actually has laws and police officers to enforce them.  The level of the Hindrance depends on how serious the crime was.  A hero with numerous unpaid parking tickets (in a game where he moight have to drive occasionally) has a Minor Hindrance, as does someone wanted for more serious crimes away from the main campaign areas.  Being accused of murder is a Major Hindrance in almost any setting."
+    },
+    {
+      "name": "Wanted",
+      "level": "MAJOR",
+      "details": "Your hero has committed some crime in his past and will be arrested if discovered by the authorities.  This assumes the setting actually has laws and police officers to enforce them.  The level of the Hindrance depends on how serious the crime was.  A hero with numerous unpaid parking tickets (in a game where he moight have to drive occasionally) has a Minor Hindrance, as does someone wanted for more serious crimes away from the main campaign areas.  Being accused of murder is a Major Hindrance in almost any setting."
+    },
+    {
+      "name": "Yellow",
+      "level": "MAJOR",
+      "details": "Not everyone has ice water in his veins.  Your hero is squeamish at the sight of blood and gore and terrified of coming to harm.  He subtracts 2 from all of his Guts checks."
+    },
+    {
+      "name": "Young",
+      "level": "MAJOR",
+      "details": "Children are sometimes forced to go on dangerous adventures through unfortunate circumstances.  Think carefully before choosing this Hindrance, for your character starts at a significant disadvantage.  Young heroes are generally 8-12 years old (in human years--you must adjust this for races with different aging paradigms).  They have only 3 points to adjust their attributes and 10 skill points.  On the plus side, youths like these have  a fair amount of luck.  They draw one extra benny at the beginning of each game session.  This is in addition to any additional bennies gained from such things as the Luck or Great Luck Edges.  If the character should live long enough to mature, the Hindrance doesn't have to be bought off, he's already paid the price for the Hindrance by starting at a disadvantage.  He stops getting the extra benny when he reaches 18 years of age however (or the age of adulthood in your particular setting)."
+    }
+  ]
+}

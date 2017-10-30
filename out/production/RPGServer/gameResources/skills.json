@@ -1,0 +1,124 @@
+{
+  "skills":[
+    {
+      "name": "Boating",
+      "linkedAttribute": "Agility",
+      "details": "Characters will this skill can handle most any boat common to their setting.  They generally know how to handle most common tasks associated with their vessels as well (tying knots, simple engine repair, etc.)."
+    },
+    {
+      "name": "Climbing",
+      "linkedAttribute": "Strength",
+      "details": "This is the skill characters use to ascend walls, trees, or cliff-sides.  No roll is usually needed to ascend ladders, ropes, or trees with lots of limbs unless the GM feels there's a good reason (being chased, wounded, etc.).  Those who have high climbing skill are those who frequently climb cliffs, walls, and other difficult surfaces.  Characters about to ascend a difficult surface must make a Climbing roll every 10\" (20 yards).  During combat, characters ascend at half their Strength per round if using ropes or with decent hand- or footholds."
+    },
+    {
+      "name": "Driving",
+      "linkedAttribute": "Agility",
+      "details": "Driving allows your hero to drive ground and hover vehicles common to his setting."
+    },
+    {
+      "name": "Fighting",
+      "linkedAttribute": "Agility",
+      "details": "Fighting covers all hand-to-hand (melee) attacks.  The TN to hit an opponent is his Parry."
+    },
+    {
+      "name": "Gambling",
+      "linkedAttribute": "Smarts",
+      "details": "Gambling is useful in many settings, from the saloons of the Old West to the barracks of most armies."
+    },
+    {
+      "name": "Guts",
+      "linkedAttribute": "Spirit",
+      "details": "Guts reflects a hero's bravery.  Characters are often called on to make Guts checks when they witness grisly scenes or encounter particularly horrific monsters."
+    },
+    {
+      "name": "Healing",
+      "linkedAttribute": "Smarts",
+      "details": "Healing is the art of stopping wounds and treating existing injuries."
+    },
+    {
+      "name": "Intimidation",
+      "linkedAttribute": "Spirit",
+      "details": "Intimidation is the art of frightening an opponent with sheer force of will, veiled or overt threats, or sometimes just really big guns.  This is an opposed roll between hero's Intimidation and his opponent's Spirit."
+    },
+    {
+      "name": "Investigation",
+      "linkedAttribute": "Smarts",
+      "details": "A character skilled in Investigation knows how to make good use of libraries, newspaper morgues, the internet, or other written sources of information. To get information from people rather than books and computers, use the Streetwise skill."
+    },
+    {
+      "name": "Knowledge",
+      "linkedAttribute": "Smarts",
+      "details": "Knowledge is a catch-all skill that must have a focus of some sort, such as Knowledge(Occult) or Knowledge(Science).  The player can choose the focus of his character's knowledge, which should reflect his background and education.  An archaeologist, for example, should have Knowledge(History) and Knowledge(Archaeology).  The skill can be taken multiple times with different focuses to reflect different areas of expertise.  General focuses such as Science are acceptable, but the GM should give a bonus to a character who has a more relevant focus, such as Knowledge(Biology)."
+    },
+    {
+      "name": "Lockpicking",
+      "linkedAttribute": "Agility",
+      "details": "Lockpicking is the ability to bypass mechanical and electronic locks.  Lockpicking is also used to disarm the catches and triggers on traps, unless a more relevant skill seems appropriate for a particular trap."
+    },
+    {
+      "name": "Notice",
+      "linkedAttribute": "Smarts",
+      "details": "Notice is a hero's general alertness and ability to search for items or clues.  This covers hearing rolls, detecting ambushes, spotting hidden weapons, and even scrutinizing other characters to see if they're lying, frightened, and so on."
+    },
+    {
+      "name": "Persuasion",
+      "linkedAttribute": "Spirit",
+      "details": "Persuasion is the ability to talk or trick others into what you want.  Nonplayer characters start at one of five different attitudes: Hostile, Uncooperative, Neutral, Friendly, or Helpful.  A successful Persuasion roll improves the NPC's attitude one step, or two with a raise.  Failure, on the other hand, decreases the character's attitude by a step, or two if a 1 is rolled on the Persuasion die (regardless of the Wild Die).  Persusasion is always modified by a character's Charisma."
+    },
+    {
+      "name": "Piloting",
+      "linkedAttribute": "Agility",
+      "details": "Piloting allows a character to fly airplanes, helicopters, jet packs, and any other flying devices common to his setting."
+    },
+    {
+      "name": "Repair",
+      "linkedAttribute": "Smarts",
+      "details": "Repair is the ability to fix gadgets, vehicles, weapons, and other machines.  Characters suffer a -2 penalty to their rolls if they don't have access to basic tools."
+    },
+    {
+      "name": "Riding",
+      "linkedAttribute": "Agility",
+      "details": "Riding allows you to mount, control, and ride any beast common to your setting.  Players should note that mounted characters use the lowest of their Fighting or Riding skills when fighting from horseback."
+    },
+    {
+      "name": "Shooting",
+      "linkedAttribute": "Agility",
+      "details": "Shooting covers all attempts to hit a target with a ranged weapon such as a bow, pistol, or rocket launcher.  The basic Target Number to hit is 4 as usual, though there are a number of important modifiers such as range that frequently come into play."
+    },
+    {
+      "name": "Stealth",
+      "linkedAttribute": "Agility",
+      "details": "Stealth is the ability to both hide and move quietly, as well as palm objects and pick pockets.  In many games, knowing exactly when your hero has been spotted and when he's not can be critical."
+    },
+    {
+      "name": "Streetwise",
+      "linkedAttribute": "Smarts",
+      "details": "Streetwise characters are able to gather information from the street, saloons, or other contacts through bribes, threats, or carousing.  Finding written information in libraries and the like is covered by the Investigation skill.  Streetwise is always modified by a character's Charisma modifier."
+    },
+    {
+      "name": "Survival",
+      "linkedAttribute": "Smarts",
+      "details": "Survival allows a character to find food, water, or shelter in hostile environments.  A character may only make one roll per day.  A successful roll finds sustenance for one person, a raise on the roll finds food and water for five adults.  Horses and other large beasts count as two adults.  Children, camels, or others with small appetites count as half.  Those who benefit from the roll do not have to make Fatigue rolls for the day for food, water, or shelter."
+    },
+    {
+      "name": "Swimming",
+      "linkedAttribute": "Agility",
+      "details": "Swimming determines if a character floats or sinks in water, as well as how fast he can move within it.  A character's Pace is half his Swimming skill in inches per turn in normal water (round up).  Choppy water counts as rough terrain and halves this rate.  Characters may not \"run\" while swimming for extra movement.  Should it become important, characters can hold their breath for 5 x their Vigor in seconds, or half that if they weren't prepared."
+    },
+    {
+      "name": "Taunt",
+      "linkedAttribute": "Smarts",
+      "details": "Taunt is a test of will attack against a person's pride through ridicule, cruel jokes, or one-upmanship.  This is an opposed roll against the target's Smarts."
+    },
+    {
+      "name": "Throwing",
+      "linkedAttribute": "Agility",
+      "details": "Throwing governs all sorts of thrown weapons, from hand grenades to knives, axes, and spears.  Throwing works just like the Shooting skill, and uses all the same modifiers."
+    },
+    {
+      "name": "Tracking",
+      "linkedAttribute": "Smarts",
+      "details": "Tracking allows a character to follow the tracks of one or more individuals in any type of terrain.  Each roll generally covers following the tracks for one mile, but the GM may adjust this dramatically for more specific or small scale searches."
+    }
+  ]
+}
