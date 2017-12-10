@@ -1,9 +1,902 @@
 {
-  "edges":[
+  "background_edges":[
     {
-      "name": "",
-      "qualityLevel": "",
-      "details": ""
+      "name": "Alertness",
+      "requirements": [
+        "Novice"
+      ],
+      "details": "Not much gets by your hero.  He's very observant and perceptive, and adds +2 to his Notice rolls to hear, see, or otherwise sense the world around him."
+    },
+    {
+      "name": "Ambidextrous",
+      "requirements": [
+        "Novice", "Agility d8+"
+      ],
+      "details": "Your hero is as deft with his left hand as he is with his right.  He may ignore the -2 penalty for using his off-hand."
+    },
+    {
+      "name": "Arcane Background (Siren)",
+      "requirements": [
+        "Novice", "Smarts d8+", "human female character", "blue tattoos"
+      ],
+      "details": "Skill: Arcane(Smarts).  Backlash: On a 1 her Arcane roll (ignore the Wild die), the power fails and the Siren cannot use it for the rest of the scene or until she spends a Benny to recover from the backlash.  Starting Power: Hyperphase or Phaselock.  Special: The Siren uses the No Power Points magic rules.  Available Powers: Stun, Deflection, Hyperphase, Puppet, Elemental Cloud, Resilience, Healing, Phaselock.  Other powers may be allowed by the GM."
+    },
+    {
+      "name": "Arcane Resistance",
+      "requirements": [
+        "Novice", "Spirit d8+"
+      ],
+      "details": "Your character is particularly resistant to magic (or psionics, or weird science, etc), whether by nature or by heritage.  He acts as if he had 2 points of Armor when hit by damage-causing arcane powers, and adds +2 to his Trait rolls when resisting opposed powers.   Even friendly arcane powers must subtract this modifier to affect the resistant hero."
+    },
+    {
+      "name": "Improved Arcane Resistance",
+      "requirements": [
+        "Novice", "Arcane Resistance"
+      ],
+      "details": "As above but Armor and resistance are increased to 4."
+    },
+    {
+      "name": "Attractive",
+      "requirements": [
+        "Novice", "Vigor d6+"
+      ],
+      "details": "Your hero or heroine is very handsom or beautiful.  His or her charisma is increased by +2."
+    },
+    {
+      "name": "Very Attractive",
+      "requirements": [
+        "Novice", "Attractive"
+      ],
+      "details": "Your hero or heroine is drop-dead gorgeous.  His or her Charisma is increased by +4 total."
+    },
+    {
+      "name": "Berserk",
+      "requirements": [
+        "Novice"
+      ],
+      "details": "Immediately after suffering a wound (including a Shaken result from physical damage), your hero must make a Smarts roll or go berserk.  While Berserk, his Parry is reduced by 2 but he adds +2 to all Fighting and Strength rolls (including melee damage) and his Toughness.  The warrior ignores all wound modifiers while berserk, but cannot use any skills, Edges, or maneuvers that require concentration including Shooting and Taunt, but not Intimidation.  Berserkers attack with reckless abandon.  Anytime his Fighting die is a 1 (regardless of his Wild Die), he hits a random adjacent target (not the original target).  The attack may hit friend as well as foe.  If there are no other adjacent targets, the blow simply misses.  The Berserker may end his rage by doing nothing (not even moving) for one full action and making a Smarts roll at -2."
+    },
+    {
+      "name": "Brawny",
+      "requirements": [
+        "Novice", "Strength d6+", "Vigor d6+"
+      ],
+      "details": "Your hero is very large or perhaps just very fit.  Either way, his bulk resists damage better than most. Add +1 to your Toughness.  In addition, your hero can carry more than most proportional to his Strength.  He can carry 8 times his Strength in pounds without penalty instead of the usual 5 times his Strength."
+    },
+    {
+      "name": "Luck",
+      "requirements": [
+        "Novice"
+      ],
+      "details": "The player seems to be blessed by fate.  He draws 1 extra benny at the beginning of the game session, allowing him to succeed at important tasks more often than most, and survive incredible dangers."
+    },
+    {
+      "name": "Great Luck",
+      "requirements": [
+        "Novice", "Luck"
+      ],
+      "details": "The player draws 2 extra bennies instead of 1 for his luck at the start of each session."
+    },
+    {
+      "name": "Quick",
+      "requirements": [
+        "Novice", "Agility d8+"
+      ],
+      "details": "Your character was born with lightning-fast reflexes and a cool head.  Whenever you are dealt a 5 or lower in combat, you may discard and draw again until you get a card higher than 5.  Level Headed characters draw their additional card and take the best before using their Quick Edge."
+    },
+    {
+      "name": "Rich",
+      "requirements": [
+        "Novice"
+      ],
+      "details": "When a player chooses this Edge, he must tell the GM how he became that rich and why he still wants to go adventuring in the dangerous world of Pandora.  You start with two Green-quality weapons instead of one (a grenade mod or a shield is considered a weaopon in this case).  When a Rich character can take some time searching for a weapon, shield, or grenade mod and pulling the right strings to get (typically between adventures), he's considered one Rank higher than its current Rank for the purpose of generating this new loot."
+    },
+    {
+      "name": "Filthy Rich",
+      "requirements": [
+        "Novice", "Rich"
+      ],
+      "details": "When a player chooses this Edge, he must tell the GM how he became that rich and why he still wants to go adventuring in the dangerous world of Pandora.  You start with two Green-quality weapons instead of one (a grenade mod or a shield is considered a weaopon in this case) and two additional Blue-quality weapons.  When a Rich character can take some time searching for a weapon, shield, or grenade mod and pulling the right strings to get (typically between adventures), he's considered one Rank higher than its current Rank for the purpose of generating this new loot.  He also gets a free improvement."
+    }
+  ],
+  "combat_edges":[
+    {
+      "name": "Blastwave",
+      "requirements": [
+        "Seasoned", "CL4P-TP"
+      ],
+      "details": "Claptraps are a little bit too sensitive to pain and constantly need to convince their opponents not to hit them on the CD tray with their buzz-axe.  Some of them are very serious about this issue and find someone to mount a Blastwave system on them.  When a character with a Blastwave system suffers a wound in melee, he can automatically set off an explosioin causing 3d6 damage in a Medium Bust Template centered on himself.  Once it has been used, the system must be reinitialized by making a Repair check.  This check requires concentration and must be made in quieter circumstances than being targeted by a dozen bloodthirsty Psychos."
+    },
+    {
+      "name": "Block",
+      "requirements": [
+        "Seasoned", "Fighting d8+"
+      ],
+      "details": "Heroes who engage in frequent hand-to-hand combat are more skilled in personal defense than most others.  They've learned not only how to attack, but how to block their opponent's blows as well.  A hero with this Edge adds +1 to his Parry."
+    },
+    {
+      "name": "Improved Block",
+      "requirements": [
+        "Veteran", "Block"
+      ],
+      "details": "Heroes who engage in frequent hand-to-hand combat are more skilled in personal defense than most others.  They've learned not only how to attack, but how to block their opponent's blows as well.  A hero with this Edge adds +2 to his Parry."
+    },
+    {
+      "name": "Blood Explosion",
+      "requirements": [
+        "Veteran", "Psycho (Hindrance)"
+      ],
+      "details": "Some Psychos' ability to, more or less voluntarily, channel eridium, combined with their love of their neighbor's suffering, allows them to cause the enemies they kill to explode, inflicting wounds to all creatures nearby, whether allies or enemies.  Once per fight, when a a character with this Edge takes out an enemy, he may start a Blood Explosion.  All creatures in a Medium Burst Template centered on the victim suffer 3d6 damage.  If the original victim is killed by an attack causing elemental damage, the level of elemental damage this attack caused is added as extra damage to the Blood Explosion."
+    },
+    {
+      "name": "Charge",
+      "requirements": [
+        "Novice", "Fighting d10+"
+      ],
+      "details": "The character specializes in brutal charges against his adversaries.  He may now ignore the usual -2 penalty on Fighting attacks made after running in the same round."
+    },
+    {
+      "name": "Combat Reflexes",
+      "requirements": [
+        "Seasoned"
+      ],
+      "details": "Your hero recovers quickly from shock and trauma.  He adds +2 to his Spirit roll when attempting to recover from being Shaken."
+    },
+    {
+      "name": "Cybernetics: Arm",
+      "requirements": [
+        "Novice", "Human", "Vigor d6+"
+      ],
+      "details": "This Edge allows the character to replace one of his arms with a cybernetic one.  This has the following effects: If the character suffered from a permanent arm injury, this is not the case anymore; All Strength and Strength-based checks involving the cybernetic arm are made at +1--this includes melee damage; the character gets -1 to his Charisma.  This Edge can be chosen three times per arm.  When it is chosen the second time, the Strength bonus improves from +1 to +2.  The third time it has the following effects: the Strength bonus improves from +2 to +3; the character's Charisma is reduced by 1 again."
+    },
+    {
+      "name": "Cybernetics: Power Fist",
+      "requirements": [
+        "Novice", "Vigor d8+", "Cybernetics: Arm"
+      ],
+      "details": "The character's cybernetic forearm becomes telescopic and his fist sets off an explosion when hitting something (or someone).  Melee attacks with the cybernetic arm gain Reach 3.  Unarmed attacks also inflict Strength+d8 explosive damage.  When using his cyberarm in combat, the character is not considered unarmed."
+    },
+    {
+      "name": "Cybernetics: Eye",
+      "requirements": [
+        "Novice", "Vigor d6+"
+      ],
+      "details": "This Edge allows the character to replace one or both eyes with cybernetic ones.  This has the following effects: if the character was suffering from a permanent eye injury, this is not the case anymore; all Notice checks get a +2 bonus; the character gets -1 to his Charisma.  The cybereye comes with a miniaturized computer allowing the character to perform the kind of tasks that could be performed on a modern smartphone, by displaying all information directly on the eye prosthesis.  This includes taking photos, shooting videos, and all kinds of augmented reality applications."
+    },
+    {
+      "name": "Cybernetics: Legs",
+      "requirements": [
+        "Novice", "Human", "Vigor d6+"
+      ],
+      "details": "This Edge allows the character to replace his legs with cybernetic ones.  This has the following effects: if the character suffered from a permanent leg injury, this is not the case anymore; when running, the character gest +2 Pace;  all checks made to run or resist the fatigue caused by running or walking get a +2 bonus; the character gets -1 to his Charisma.  The character may choose to only replace one of his legs; if he does, ignore the running bonuses and penalty to Charisma.  If later on the character wants to replace the other leg, he must choose this Edge again and will suffer the full effects as if he had originally chosen to replace both legs."
+    },
+    {
+      "name": "Cybernetics: Gyrostabilizer",
+      "requirements": [
+        "Novice", "Vigor d8+", "Cybernetics: Legs (both legs must have been replaced)"
+      ],
+      "details": "The character's lower body is enhanced with a gyrostabilizer.  Penalties caused by the character's movements are reduced by 2.  The character gets -1 to his Charisma."
+    },
+    {
+      "name": "Cybernetics: Prosthesis Repairs",
+      "requirements": [
+        "Novice", "Any Cybernetics Edge"
+      ],
+      "details": "When a character suffers a permanent injury on one of his cybernetic prostheses, it stops functioning.  Choosing this Edge allows the character to make it work again.  All the Edges associated with the damaged prosthesis instantly work again as well."
+    },
+    {
+      "name": "Cybernetics: Shoulder Cannon",
+      "requirements": [
+        "Legendary", "Human", "Vigor d8+"
+      ],
+      "details": "A cybernetic laser cannon is mounted on the character's shoulder.  When activated as a free action, it automatically fires at the same target the character is firing at.  When the character wants to use his shoulder cannon, he rolls one more Shooting die.  Depending on the number of successful dice, he may choose which weapons hit.  When choosing this Edge, the character suffers -1 to his Charisma.  Laser Cannon: 40/80/160, 2d10 AP4, RoF 1, Heavy weapon."
+    },
+    {
+      "name": "Cybernetics: Elemental Shoulder Cannon",
+      "requirements": [
+        "Legendary, Cybernetics: Shoulder Cannon"
+      ],
+      "details": "The character's Shoulder Cannon now inflicts one level of elemental damage.  The player must choose the damage type from the following list: corrosive, explosive, incendiary, shock.  This Edge can be chosen multiple times, either to raise the elemental damage level by one, or to add an extra element."
+    },
+    {
+      "name": "Decepti0n",
+      "requirements": [
+        "Seasoned", "Assassin", "Stealth d8+"
+      ],
+      "details": "The Assassin may make a Stealth roll to become completely invisible.  When he does, a holographic image of him appears in his place and stays here until the end of his next turn.  This counts as an action.  If the Assassin attacks someone or something while invisible: he gains +2 on his Shooting and Throwing rolls, and +4 on his Fighting rolls; he reappears.  The holographic image cannot attack, more, be Shaken, or wounded, but it may make one Test of Will each turn, including the one during which it appears, using the Assassin's skills, against an enemy he chooses.  All bonuses it might get apply to the Assassin's attacks."
+    },
+    {
+      "name": "Digistructed Autonomous Weapon (DAW)",
+      "requirements": [
+        "Novice", "Smarts d6+", "Repair d6+"
+      ],
+      "details": "The character can digistruct an autonomous weapon in an adjacent square.  This counts as an action.  This autonomous weapon is an Extra, acts on its owner's initiative card, and can act as soon as it appears on the battlefield.  It has ammo equal to the maximum value of its owner's corresponding ammo indicator.  The character can de-digistruct it at any time for the cost of one action.  It can then be digistructed again one hour later, with full ammunition.  A DAW also automatically de-digistructs when its owner is unconscious or dead.  When a Digistructed Autonomous Weapon is destroyed, it can be digistructed again 1d6 hours later.  For a list of DAWs, consult the Save Borderlands guide book pages 16 - 18."
+    },
+    {
+      "name": "DAW: Badass Clone",
+      "requirements": [
+        "Legendary", "Digistructed Autonomous Weapon (clone)"
+      ],
+      "details": "When selecting this Edge, the character's clone becomes a badass clone.  It is now considered a Wild Card, and gains the following enhancements: Fighting d10; Shooting d10; Vigor d10; Parry 7; Toughness 7; RPG (24/48/96, 4d6 AP15, RoF 1, 3 ammo, Slow, one full turn to reload."
+    },
+    {
+      "name": "DAW: Blast",
+      "requirements": [
+        "Seasoned", "Digistructed Autonomous Weapon (except Support drone)"
+      ],
+      "details": "The Digistructed Weapon now generates destructive blasts around itself.  Once for each materialization of the DAW, it may cause 3d6 damage to each creature inside a Medium Burst Template centered on itself."
+    },
+    {
+      "name": "DAW: Bodyguard",
+      "requirements": [
+        "Vegeran", "Digistructed Autonomous Weapon (clone)"
+      ],
+      "details": "The character's clones sometimes temporarily lose their holographic aspect to become an almost exact copy of their owner.  This can be pretty confusing to his enemies.  When the character spends a benny in an attempt to soak wounds and fails to remove them all, he can decice that his clone has been hit instead of him.  The wounds are ignored and the clone disappears.  He will be available again in 1d6 hours."
+    },
+    {
+      "name": "DAW: Clone of Clone",
+      "requirements": [
+        "Seasoned", "Digistructed Autonomous Weapon (clone)"
+      ],
+      "details": "The character gains a second clone which follows the exact same rules as the first one.  The clones' evolution and enhancements are specific though, so if at some point the player chooses another clone Edge, he must choose which clone gets it.  If the first clone already benefits from such Edges, the second one doesn't.  Both clones can be digistructed at the same time, at the cost of only one action."
+    },
+    {
+      "name": "DAW: Complete Invisibility",
+      "requirements": [
+        "Veteran", "Digistructed Autonomous Weapon (recon drone)"
+      ],
+      "details": "The drone is now invisible even while moving, and detecting it now requires a Notice roll at -4.  If it attacks a target, it loses its invisibility and can only recover it on the next turn, by making another Stealth check."
+    },
+    {
+      "name": "DAW: Digidealer",
+      "requirements": [
+        "Veteran", "Digistructed Autonomous Weapon (support drone)"
+      ],
+      "details": "The drone's nanobots can now inject various drugs and toxins in allied and enemy organisms.  The drone gains the Boost/Lower Trait Power from Savage Worlds Deluxe.  It can use it by making a Healing roll and applying the No Power Points rule's modifiers to it.  When maintaining the power, the drone gets -1 to all its rolls."
+    },
+    {
+      "name": "DAW: Elemental Fists",
+      "requirements": [
+        "Veteran", "Digistructed Autonomous Weapon (combat robot)"
+      ],
+      "details": "When the character digistructs its combat robot, he may choose one elemental damage type (corrosive, incendiary, shock, or slag).  From now on, all the damage rolls made by the robot after a successul Fighting attack are enhanced with one level of the chosen elemental damage.  This lasts until the robot is de-digistructed or destroyed.  This Edge can be taken once per Rank per DAW.  Every time it is, the level of elemental damage added to the robot's damage rolls is increased by one."
+    },
+    {
+      "name": "DAW: Hardware Optimization",
+      "requirements": [
+        "Novice", "Digistructed Autonomous Weapon (except clone)"
+      ],
+      "details": "One of the DAW's melee weapons, guns, or shield's Quality level improves one step.  The player may choose an Improvement and apply it to its character's DAW.  On a melee weapon, this Edge improves the damage it deals by one die type (up to d12) or adds one to its current AP.  This Edge can only be taken once per rank per DAW, and no DAW part can be improved beyond purple Quality using this Edge."
+    },
+    {
+      "name": "DAW: Longbow",
+      "requirements": [
+        "Novice", "Digistructed Autonomous Weapon"
+      ],
+      "details": "The DAW can now be digistructed in any square its owner can see, regardless of the distance."
+    },
+    {
+      "name": "DAW: Mag Lock",
+      "requirements": [
+        "Novice", "Digistructed Autonomous Weapon (except drones)"
+      ],
+      "details": "With this Edge, the DAW can be deployed on walls and ceilings.  If it is able to move, it can now do so on these surfaces."
+    },
+    {
+      "name": "DAW: Misuse of Company Assets",
+      "requirements": [
+        "Veteran", "Digistructed Autonomous Weapon (clone)"
+      ],
+      "details": "This Edge allows the player to roll a shield, a pistol, a shotgun, or a grenade mod for his clone.  From now on, the clone will always be digistructed with this gear.  The rolled item is of blue Quality and Veteran rank."
+    },
+    {
+      "name": "DAW: Secondary Weapon",
+      "requirements": [
+        "Veteran", "Digistructed Autonomous Weapon (attack and recon drones, combat robots, turrets)"
+      ],
+      "details": "The character's DAW is granted a secondary weapon which can be used only once for each DAW's materialization.  This secondary weapon must be chosen between the two following models: Multiple RPG (24/48/96, 4d6, Medium Burst Template, Slow), Laser Beam (40/80/160, 2d10, AP 4, Heavy Weapon).  Firing with the secondary weapon counts as an action, so the DAW may accordingly incur a multi-action penalty if it fires its main weapon on the same round.  If the DAW has no Shooting skill, this Edge grants it to it at d6.  This Edge can only be taken once per DAW."
+    },
+    {
+      "name": "DAW: Shield",
+      "requirements": [
+        "Seasoned", "Digistructed Autonomous Weapon (except clones)"
+      ],
+      "details": "The DAW is now equipped with a White-quality Dahl Booster Shield.  Characters adjacent to the weapon benefit from the shield and its boosters."
+    },
+    {
+      "name": "DAW: Software Optimization",
+      "requirements": [
+        "Novice", "Digistructed Autonomous Weapon"
+      ],
+      "details": "The character's DAW gains one die type in an Attribute or Skill it already owns.  If the GM allows it, the DAW can instead be granted a Combat Edge.  This Edge can only be taken once per rank per DAW."
+    },
+    {
+      "name": "DAW: Supply Drop",
+      "requirements": [
+        "Novice", "Digistructed Autonomous Weapon"
+      ],
+      "details": "Digistructing the DAW now comes with a bonus from the manufacturer.  Every time the character digistructs its DAW, one (and only one) character adjacent to it gets a free resupply from the following choices: Shield--the character's Shield capacity instantly regains its maximum value and is no longer disabled (if it was); Ammo--the character regains one rocket or a full ammo indicator of another kind; Healing--the character immediately heals the last wound he suffered."
+    },
+    {
+      "name": "DAW: Surveyor",
+      "requirements": [
+        "Seasoned", "Digistructed Autonomous Weapon (recon or support drone)"
+      ],
+      "details": "The drone can now reactivate shields.  It gains d6 in repair.  On a successful check, the drone can reactivate one shield in a 6\" radius.  Each success and raise on the roll also increases the current Capacity of the shield by its Rechargin Rate value."
+    },
+    {
+      "name": "DAW: Twin Digistructed Weapons",
+      "requirements": [
+        "Legendary", "Digistructed Autonomous Weapon (turret)"
+      ],
+      "details": "This edge allows the character to digistruct two DAWs instead of one.  The second weapon is identical to the first one's main weapon, and all the Edges taken by the character to enhance the main weapon of his first turret apply to the twin as well.  When he chooses this Edge, the player must decide the way the second weapon will be digistructed: Mounted on the same turret (one action digistructs the turret with both weapons, the turret can use both weapons without incurring the multi-action penalty, and both weapons get a free Improvement); Mounted on a second turret (the character can only deploy one turret per round, both turrets act independently on their owner's initiative card)."
+    },
+    {
+      "name": "Digistructed Autonomous Weapon Specialist",
+      "requirements": [
+        "Novice", "Digistructed Autonomous Weapon"
+      ],
+      "details": "Some people, especially those working or having worked for mercenary companies of big corporations' armed forces, have followed a special training to fight better with DAWs.  A character with this Edge can now spend his own bennies on the rolls made by their DAWs."
+    },
+    {
+      "name": "Dodge",
+      "requirements": [
+        "Seasoned", "Agility d8+"
+      ],
+      "details": "Some heroes are crafty types who know how to get out of harm's way.  This Edge allows them to use cover, movement, and concealment to make them harder to hit.  Unless they are the victim of a surprise attack and taken completely unaware, attackers must subtract 1 from their Shooting or Throwing rolls when targeting them.  Characters who attempt to evade area effect attacks may add +1 to their Agility roll as well (when allowed)."
+    },
+    {
+      "name": "Elemental Affinity",
+      "requirements": [
+        "Novice"
+      ],
+      "details": "Some characters have a special skill with their elemental weapon.  This Edge allows them to add one elemental damage level when they use a weapon dealing one specific type of elemental damage.  The elemental type must be chosen when the player chooses this Edge, and he can choose one more elemental type each time he chooses this Edge again."
+    },
+    {
+      "name": "Elemental Specialization",
+      "requirements": [
+        "Seasoned", "Elemental Affinity"
+      ],
+      "details": "The character now adds two levels to the chosen element's damage."
+    },
+    {
+      "name": "Elemental Sweat",
+      "requirements": [
+        "Seasoned", "Psycho (Hindrance)", "Vigor d8+"
+      ],
+      "details": "The Psycho likes hurting people almost as much as he likes being hurt.  And when he does either, he sweats some corrosive, electrical, or fiery substance.  When he causes or suffers a wound, the Psycho gets covered in this elemental substance and ignores one level of elemental damage of the corresponding element type per Rank he has beyond Novice.  The player must select the element of his character's Elemental Sweat upon choosing this Edge.  A player may choose this Edge multiple times in order to resist more than one type of elemental damage."
+    },
+    {
+      "name": "Eridiomaniac",
+      "requirements": [
+        "Seasoned", "Arcane (Siren)", "Smarts d8+", "Arcane d6+"
+      ],
+      "details": "The Siren has gained such an affinity with eridium's properties that the targets of her powers now have the hardest time resisting her attacks.  She gains a +2 bonus to all her opposed Arcane rolls."
+    },
+    {
+      "name": "Improved Dodge",
+      "requirements": [
+        "Veteran", "Dodge"
+      ],
+      "details": "Some heroes are crafty types who know how to get out of harm's way.  This Edge allows them to use cover, movement, and concealment to make them harder to hit.  Unless they are the victim of a surprise attack and taken completely unaware, attackers must subtract 2 from their Shooting or Throwing rolls when targeting them.  Characters who attempt to evade area effect attacks may add +2 to their Agility roll as well (when allowed)."
+    },
+    {
+      "name": "First Strike",
+      "requirements": [
+        "Novice", "Agility d8+"
+      ],
+      "details": "Once per turn the hero (if not Shaken) gets a free Fighting attack against a single foe who moves adjacent to him.  This automatically interrupts the opponent's action and does not cost the hero his action if he is on Hold or has not yet acted this round."
+    },
+    {
+      "name": "Gunzerker",
+      "requirements": [
+        "Novice", "Shooting d8+"
+      ],
+      "details": "Immediately after suffering a wound (including a Shaken result from physical damage), your hero must make a Smarts roll or go Gunzerk (he may choose to fail on this roll).  While Gunzerk, his Parry is reduced by 2 but he adds +2 to all Shooting and Vigor rolls, and Toughness.  He also ignores all wound modifiers while Gunzerk, but cannot use any skills, Edges, or maneuvers that require concentration or allow them to do anythign else than shooting someone.  Gunzerkers shoot with reckless abandon.  Any time his Shooting die is a 1 (regardless of his Wild die), he hits a random target (not the original target) in a Large Burst Template centered on his initial target.  The attack may hit friend as well as foe.  The Gunzerker may end his rage by doing nothing (not even moving) for one full action and making a Smarts roll at -2.  This roll is not necessary if there is no imminent danger of which he is aware."
+    },
+    {
+      "name": "Gunlust",
+      "requirements": [
+        "Seasoned", "Gunzerker", "Strength d10+"
+      ],
+      "details": "When he is Gunzerk, the character may use two weapons at the same time, even if they normally require two hands to operate.  With each weapon, he can use any Edge or meaneuver allowed by his Gunzerk condition as if he held it the normal way.  The multi-action penalties that may be induced by his actions still apply as usual."
+    },
+    {
+      "name": "Improved First Strike",
+      "requirements": [
+        "Heroic", "First Strike"
+      ],
+      "details": "Whenever an enemy moves adjacent to the hero, the hero (if not Shaken) gets a free Fighting attack against them.  This automatically interrupts the opponent's action and does not cost the hero his action if he is on Hold or has not yet acted this round."
+    },
+    {
+      "name": "Fleet-Footed",
+      "requirements": [
+        "Novice", "Agility d6+"
+      ],
+      "details": "The hero's pace is increased by +2 and he rolls a d10 instead of a d6 when running."
+    },
+    {
+      "name": "Florentine",
+      "requirements": [
+        "Novice", "Agility d8+", "Fighting d8+"
+      ],
+      "details": "A character trained to fight \"Florentine\" is a master at wielding two weapons at once.  He adds +1 to his Fighting rolls versus an opponent with a single weapon and no shield.  In addition, opponents subtract 1 from any \"gang up\" bonuses they would normally get against the hero as his two flashing blades parry their blows."
+    },
+    {
+      "name": "Frenzy",
+      "requirements": [
+        "Seasoned", "Fighting d10+"
+      ],
+      "details": "Frenzied fighters make fast and furious melee attacks, sacrificing finesse for raw speed.  This allows them to make an extra Fighting attack per round at a -2 penalty to all Fighting rolls.  This attack must be taken at the same time as another Fighting attack though it may target any two foes adjacent to the hero (Wild Cards roll two Fighting dice and one Wild Die).  The -2 penalty is subtracted from all attacks.  A character armed with two weapons still only makes one extra attack."
+    },
+    {
+      "name": "Improved Frenzy",
+      "requirements": [
+        "Veteran", "Frenzy"
+      ],
+      "details": "Frenzied fighters make fast and furious melee attacks, sacrificing finesse for raw speed.  This allows them to make an extra Fighting attack per round.  This attack must be taken at the same time as another Fighting attack though it may target any two foes adjacent to the hero (Wild Cards roll two Fighting dice and one Wild Die).  A character armed with two weapons still only makes one extra attack."
+    },
+    {
+      "name": "Giant Killer",
+      "requirements": [
+        "Veteran"
+      ],
+      "details": "The bigger they are, the harder they are to kill.  At least for most.  But your hero knows how to find the weak points in massive creatures.  Your hero does +1d6 damage when attacking creatures three sizes or more larger than himself.  An ogre (Size +3) with this ability, for example, gains the bonus only against creatures of Size +6 or greater.  A human Giant Killer (Size 0), can claim the bonus against the ogre, however."
+    },
+    {
+      "name": "Hard To Kill",
+      "requirements": [
+        "Novice", "Wild Card", "Spirit d8+"
+      ],
+      "details": "Your hero has more lives than a truckload of cats.  When forced to make Vigor rolls due to Incapacitation, he may ignore his wound modifiers.  This only applies to Vigor rolls called for by these tables--he still suffers from wound modifiers for other Trait rolls normally."
+    },
+    {
+      "name": "Harder To Kill",
+      "requirements": [
+        "Veteran", "Hard To Kill"
+      ],
+      "details": "Your hero is tougher to kill than Rasputin.  If he is ever \"killed,\" roll a die.  On an odd result, he's dead as usual.  On an even roll, he's Incapacitated but somehow escapes death.  He may be captured, stripped of all his belongings, or mistakenly left for dead, but he somehow survives."
+    },
+    {
+      "name": "Hyperhyperphase",
+      "requirements": [
+        "Seasoned", "Arcane (Siren)", "Hyperphase (Power)"
+      ],
+      "details": "When the Siren enters and leaves Hyperphase, she now inflicts 3d6 damage to all enemies in a Medium Burst Template."
+    },
+    {
+      "name": "Hyperion Punch",
+      "requirements": [
+        "Seasoned", "CL4P-TP", "Fighting d8+"
+      ],
+      "details": "After years of humiliation in the greasy palms of Pandorian gangs, some Claptraps decided to change the rules of the game and get themselves a Hyperion PUnch.  This accessory is mounted on a Claptrap as an arm replacement.  When fighting with his Hyperion Punch, a Claptrap is not considered unarmed and inflicts Strength+d6 plus 2 levels of incendiary damage."
+    },
+    {
+      "name": "Iconic Accessory",
+      "requirements": [
+        "Novice", "GM's Authorization"
+      ],
+      "details": "This Edge allows a character to either own at the beginning of the game or later acquire a unique magical or near-magical accessory.  Each accessory must be defined in collaboration with the GM.  For some of them, you may be allowed to design Edges which will enhance the Iconic Accessory in the future."
+    },
+    {
+      "name": "Level Headed",
+      "requirements": [
+        "Seasoned", "Smarts d8+"
+      ],
+      "details": "Fighters who can keep their cool when everyone else is running for cover are deadly customers in combat.  A Hero with this Edge draws an additional action card in combat and acts on the best of the draw."
+    },
+    {
+      "name": "Improved Level Headed",
+      "requirements": [
+        "Seasoned", "Level Headed"
+      ],
+      "details": "Fighters who can keep their cool when everyone else is running for cover are deadly customers in combat.  A Hero with this Edge draws two additional action cards in combat and acts on the best of the draw."
+    },
+    {
+      "name": "Many Must Fall",
+      "requirements": [
+        "Heroic", "Decepti0n", "Stealth d10+"
+      ],
+      "details": "When he takes out an enemy while invisible, the Assassin may make a Stealth roll with a cumulative -2 penalty to remain invisible for one more turn instead of reappearing.  All bonuses granted by the character's Decepti0n and his holographic image's Tests of Will will continue to apply until the Assassin reappears."
+    },
+    {
+      "name": "Marksman",
+      "requirements": [
+        "Seasoned"
+      ],
+      "details": "The hero excels at taking controlled, measured shots.  If he does not move in a turn, he may fire as if he took the aim maneuver.  Marksman may never be used with a rate of fire greater than 1.  Marksman works with both Shooting and Throwing."
+    },
+    {
+      "name": "Nerves of Steel",
+      "requirements": [
+        "Novice", "Wild Card", "Vigor d8+"
+      ],
+      "details": "Your hero has learned to fight on through the most intense pain.  He may ignore 1 point of wound penalties."
+    },
+    {
+      "name": "Improved Nerves of Steel",
+      "requirements": [
+        "Novice", "Nerves of Steel"
+      ],
+      "details": "Your hero has learned to fight on through the most intense pain.  He may ignore 2 points of wound penalties."
+    },
+    {
+      "name": "No Mercy",
+      "requirements": [
+        "Seasoned"
+      ],
+      "details": "The character may spend a benny to reroll any one damage roll.  For area-effect attacks, each benny spent applies to one target."
+    },
+    {
+      "name": "Phase Blast",
+      "requirements": [
+        "Veteran", "Arcane (Siren)", "Phaselock (Power)"
+      ],
+      "details": "The Siren's Phaselock now causes damage to enemies nearby.  Once per fight, when the Siren successfully phaselocks an enemy, she may inflict 3d6 damage to all enemies in a Medium Burst Template centered on the phaselocked enemy.  The Phase Blast does one level extra elemental damage per Rank the Siren has beyond Seasoned.  The type of elemental damage is always the same and must be chosen by the player when selecting this Edge."
+    },
+    {
+      "name": "Phase Convergence",
+      "requirements": [
+        "Novice", "Arcane (Siren)", "Phaselock (Power)"
+      ],
+      "details": "When the Siren successfully Phaselocks an enemy, she may apply Phase Convergence on every enemy creature in a Large Burst Template centered on the phaselocked enemy.  Each creature affected by Phase Convergence must succeed on a Strength roll (with a -2 penalty if the Siren got a raise on her Arcane roll) or be sucked into a squre adjacent to the phaselocked enemy.  If no square is available, the creature is placed in the closest square available."
+    },
+    {
+      "name": "Quick Draw",
+      "requirements": [
+        "Novice", "Agility d8+"
+      ],
+      "details": "This Edge allows a hero to draw a weapon and ignore the usual -2 to his attack that round.  If the character must make an Agility roll to draw a weapon, he adds +2 to the roll."
+    },
+    {
+      "name": "Rainbow Nova",
+      "requirements": [
+        "Veteran", "Blastwave"
+      ],
+      "details": "The Blastwave explosion now inflicts one level of each elemental damage type (corrosive, incendiary, shock, and slag, in this order).  Each character Rank beyond Veteran adds a level of elemental damage of each type.  When the character reaches Legendary Rank, the explosion affects a Large Burst Template."
+    },
+    {
+      "name": "Raving Retribution",
+      "requirements": [
+        "Heroic", "Psycho (Hindrance)", "Elemental Sweat", "Vigor d10+"
+      ],
+      "details": "The elemental substances secreted by the Psycho's eridum-irradiated body become more and more abundant, and start to agglomerate into energy balls the Psycho can hurl at his enemies.  When a character with this Edge suffers a wound, he automatically hurls an energy ball of the element he selected for his Elemental Sweat at the creature that just harmed him.  When this happens, the player makes a Vigor roll for the Psycho (applying the modifiers that usually apply to Shooting rolls to it).  If he succeeds, the target suffers 3d6 damage, plus one level of extra elemental damage per Rank the character has beyond Seasoned."
+    },
+    {
+      "name": "Rock and Roll!",
+      "requirements": [
+        "Seasoned", "Shooting d8+"
+      ],
+      "details": "Some veteran shooters learn to compensate for the recoil of fully-automatic weapons.  If a character with this Edge does not move, he may ignore the recoil penalty for firing a weapon on fully automatic."
+    },
+    {
+      "name": "Sexual Tyrannosaurus",
+      "requirements": [
+        "Veteran", "Gunzerker", "Vigor d10+"
+      ],
+      "details": "At the end of his turn, if he is Gunzerk, the character may make a Vigor roll.  If he succeeds, he instantly heals his last wound.  Sexual Tyrannosaurus has no effect on the character being Shaken, even if the Vigor roll allows him to heal his last remaining wound."
+    },
+    {
+      "name": "Standard Exchange",
+      "requirements": [
+        "Novice", "CL4P-TP", "permanent injury"
+      ],
+      "details": "Claptraps really are not meant to find themselves in the middle of a gunfight: only one \"leg,\", one eye, a frail constitution... it's no wonder they're often rendered useless after a fight.  When a CL4P-TP gets a permanent injury, it can cancel it by choosing this Edge.  It can do so as many times as it wants."
+    },
+    {
+      "name": "Steady Hands",
+      "requirements": [
+        "Novice", "Agility d8+"
+      ],
+      "details": "Your hero ignores the \"unstable platform\" penalty for firing from the backs of animals or while riding in moving vehicles."
+    },
+    {
+      "name": "Sweep",
+      "requirements": [
+        "Novice", "Strength d8+", "Fighting d8+"
+      ],
+      "details": "Sweep allows a character to make a single Fighting attack and apply it against all currently adjacent targets at a -2 penalty (friends and foes alike--be careful).  Resolve each damage roll separately.  The attack is applied immediately when rolled and only affects targets adjacent at that time.  A characer may not use Sweep in the same round she uses Frenzy, nor may she Sweep more than once per round."
+    },
+    {
+      "name": "Improved Sweep",
+      "requirements": [
+        "Veteran", "Sweep"
+      ],
+      "details": "Sweep allows a character to make a single Fighting attack and apply it against all currently adjacent targets (friends and foes alike--be careful).  Resolve each damage roll separately.  The attack is applied immediately when rolled and only affects targets adjacent at that time.  A characer may not use Sweep in the same round she uses Frenzy, nor may she Sweep more than once per round."
+    },
+    {
+      "name": "Trademark Weapon",
+      "requirements": [
+        "Novice", "Fighting or Shooting of d10+"
+      ],
+      "details": "The hero knows a weapon manufacturer or weapon type like the back of his hand.  When using that weapon, he adds +1 to his Fighting, Shooting, or Throwing rolls.  A hero can take this Edge multiple times, applying it to a different weapon manufacturer or type each time.  If a Trademark weapon is lost, the hero can replace it, but the benefit of the Edge doesn't kick in for two game weeks."
+    },
+    {
+      "name": "Improved Trademark Weapon",
+      "requirements": [
+        "Veteran", "Trademark Weapon"
+      ],
+      "details": "The hero knows a weapon manufacturer or weapon type like the back of his hand.  When using that weapon, he adds +2 to his Fighting, Shooting, or Throwing rolls.  A hero can take this Edge multiple times, applying it to a different weapon manufacturer or type each time.  If a Trademark weapon is lost, the hero can replace it, but the benefit of the Edge doesn't kick in for two game weeks."
+    },
+    {
+      "name": "Two-Fisted",
+      "requirements": [
+        "Novice", "Agility d8+"
+      ],
+      "details": "A Two-Fisted hero isn't ambidextrous--he's simply learned to fight with two weapons (or both fists) at once.  When attacking with a weapon in each hand, he rolls each attack separately but ignores the multi-action penalty."
+    },
+    {
+      "name": "Unf0rseen",
+      "requirements": [
+        "Veteran", "Decepti0n"
+      ],
+      "details": "When the Assassin becomes visible again, his holographic image explodes, causing 3d6 damage to all creatures in a Medium Burst Template centered on it."
+    },
+    {
+      "name": "vaulthunter.sh",
+      "requirements": [
+        "Seasoned", "CL4P-TP", "Knowledge (computers) d6+"
+      ],
+      "details": "This software is a watered down version of the infamous VaultHunter.EXE that Handsome Jack once installed in a CL4P-TP in order to create the no less infamous Fragtrap, who helped in his personal war against Dahl on Elpis and Helios.  It is usually regarded as a piece of malware, but who knows where your Claptrap is wandering on his nights of depression?  To launch this software, the character must make a Knowledge (computers) check.  On a success he rolls 1d6 and consults the table on \"Savage Borderlands\" page 28.  The effects last until the player gets a club when drawing for initiative.  If he gets a 1 on his Knowledge (computer) die, regardless of the wild die's result, vaulthunter.sh malfunctions. The character won't be able to use it until he succeeds on a -2 Knowledge (computers) check."
+    },
+    {
+      "name": "/etc/skills.conf",
+      "requirements": [
+        "Seasoned", "CL4P-TP", "Knowledge (computers) d8+"
+      ],
+      "details": "Some Claptraps entertain the dangerous habit of tinkering with their own configuration files.  By using an action to make a successful Knowledge (computers) check, the character can improve on of his Skills by one die, two with a raise.  All his other skills are lowered by one die (d4s are lowered to d4-2).  This effect ordinarily lasts 10 minutes.  After that, the Claptrap's OS forces him to go back to his original configuration.  In combat (or in any very stressful situation requiring to draw initiative), this effect only lasts until the player draws a club and starts his turn.  If the character gets a 1 on his Knowledge (computers) die, regardless of the wild die's result, the tinkering goes wrong.  The Claptrap overheats and all of his skills are lowered by one die until he succeeds on a -2 Knowledge (computers) check.  This may take a long time considering this skill is lowered as well, but on the plus side the other characters can cook sausages on the Claptrap in the meantime."
+    }
+  ],
+  "leadership_edges":[
+    {
+      "name": "Command",
+      "requirements": [
+        "Novice", "Smarts d6+"
+      ],
+      "details": "Command is the ability to give clear instructions to surrounding allies and enforce your hero's will upon them.  This makes your character's compatriots more willing to fight on despite their wounds, and so adds +1 to their Spirit rolls to recover from being Shaken."
+    },
+    {
+      "name": "Fervor",
+      "requirements": [
+        "Veteran", "Spirit d8+", "Command"
+      ],
+      "details": "A simple phrase uttered by a great leader can sometimes have momentous results.  A leader with this ability can inspire his men to bloody fervor by yelling a motto, slogan, or other inspirational words.  Those in the command radius add +1 to their Fighting damage rolls."
+    },
+    {
+      "name": "Hold the Line!",
+      "requirements": [
+        "Seasoned", "Smarts d8+", "Command"
+      ],
+      "details": "This Edge strengthens the will of the men under the hero's command.  The troops add +1 to their Toughness."
+    },
+    {
+      "name": "Inspire",
+      "requirements": [
+        "Seasoned", "Command"
+      ],
+      "details": "Leaders with exceptional reputations and experience in battle inspire the soldiers around them.  They add +2 to the Spirit rolls when recovering from being Shaken (this already includes the original +1 bonus for the Command Edge).  This greatly improves the chances of men recovering from light wounds or poor morale that might normally take them out of the action."
+    },
+    {
+      "name": "Natural Leader",
+      "requirements": [
+        "Novice", "Spirit d8+", "Command"
+      ],
+      "details": "This Edge signifies a special link between a leader and his men.  With it, he may share his bennies with any troops under his command."
+    }
+  ],
+  "power_edges": [
+    {
+      "name": "New Power",
+      "requirements": [
+        "Novice", "Arcane Background"
+      ],
+      "details": "An arcane character may learn a new power by choosing this Edge (which may be taken multiple times).  He may choose from any powers normally available to his particular Arcane Background."
+    }
+  ],
+  "professional_edges": [
+    {
+      "name": "Ace",
+      "requirements": [
+        "Novice", "Agility d8+"
+      ],
+      "details": "Aces are special pilots and drivers who feel more comfortable behind the wheel, throttle, or flightstick than their own two feet.  Aces add +2 to Boating, Driving, and Piloting rolls.  In addition, they may also spend bennies to make soak rolls for any vehicle or vessel they control.  This is a Boating, Driving, or Piloting roll at -2 (cancelling their usual +2).  Each success and raise negates a wound and any critical hit that would have resulted from it."
+    },
+    {
+      "name": "Acrobat",
+      "requirements": [
+        "Novice", "Agility d8+", "Strength d6+"
+      ],
+      "details": "Those who have formal training in the acrobatic arts or are naturally agile may take this Edge.  It adds +2 to all Agility rolls made to perform acrobatic maneuvers (including Trick maneuvers), and also adds +1 to a character's Parry as long as he has no encumbrance penalty."
+    },
+    {
+      "name": "Investigator",
+      "requirements": [
+        "Novice", "Smarts d8+", "Investigation d8+", "Streetwise d8+"
+      ],
+      "details": "Investigators are characters who have spent a great deal of time researching ancient legends, working the streets, or deducing devilish mysteries.  Some of these heroes are actual Private Investigators for hire while others may be sleuthing mages in a fantasy world or perhaps inquisitive college professors stumbling upon Things Man was not Meant to Know in the dark of night.  Investigators add +2 to Investigation and Streetwise rolls, as well as Notice rolls made to search through evidence."
+    },
+    {
+      "name": "Jack-of-All-Trades",
+      "requirements": [
+        "Novice", "Smarts d10+"
+      ],
+      "details": "Through advanced schooling, book-learning, computer-enhanced skill programs, or just amazing intuitive perception, your hero has a talent for picking up skills on the fly.  There is little he can't figure out given a little time and a dash of luck.  Any time he makes an unskilled roll for a Smarts-based skill, he may do so at d4 instead of the usual d4-2."
+    },
+    {
+      "name": "McGyver",
+      "requirements": [
+        "Novice", "Smarts d6+", "Repair d6+", "Notice d8+"
+      ],
+      "details": "This character can improvise something when the need for a tool arises.  He suffers no negative penalties on Trait rolls for lack of equipment in most situations.  In addition, given a few simple tools, props, or devices, he can generally rig devices to help escape from death-traps, weapons to match some bizarre need, or otherwise create something that's needed when such a thing isn't actually present.  The extent of this is completely up to the Game Master, but creativity should be rewarded, particularly in difre situations where few other answers are possible."
+    },
+    {
+      "name": "Mr. Fix It",
+      "requirements": [
+        "Novice", "Smarts d10+", "Repair d8+", "At least one scientific skill at d6+"
+      ],
+      "details": "The inventor adds +2 to his Repair rolls. With a raise, he halves the time normally required to fix something.  This means that if a particular Repair job already states that a raise repairs it in half the time, a Mr. Fix It could finish the job in one-quarter the time with a raise."
+    },
+    {
+      "name": "Scholar",
+      "requirements": [
+        "Novice", "d8+ in affected skill"
+      ],
+      "details": "Learned professors, devoted students, and amateur enthusiasts spend months of their lives studying particular fields, and rarely fail to answer questions in their particular area of expertise.  Pick any two Knowledge skills that you have a d8 or better in.  Add +2 to your total whenever these skills are used."
+    },
+    {
+      "name": "Thief",
+      "requirements": [
+        "Novice", "Agility d8+", "Climb d6+", "Lockpick d6+", "Stealth d8+"
+      ],
+      "details": "Thieves specialize in deceit, treachery, and acrobatics.  They can be invaluable where traps must be detected, walls must be climbed, and locks must be picked.  Thieves add +2 to Climb, Lockpick, and Stealth rolls.  The bonus to Stealth does not apply when the character is in a wilderness environment--only in urban areas."
+    },
+    {
+      "name": "Woodsman",
+      "requirements": [
+        "Novice", "Spirit d6+", "Survival d8+", "Tracking d8+"
+      ],
+      "details": "Woodsmen are rangers, scouts, and hunters who are more at home in the wilderness than in urban areas.  They are skilled trackers and scouts, and know how to live off the land for months at a time.  Woodsmen gain +2 to Tracking, Survival, and Stealth rolls made in the wilderness (not towns, ruins, or underground)."
+    }
+  ],
+  "social_edges": [
+    {
+      "name": "Charismatic",
+      "requirements": [
+        "Novice", "Spirit d8+"
+      ],
+      "details": "Your hero has learned how to work with others, even those who might be somewhat opposed to him or his efforts.  This adds +2 to his Charisma."
+    },
+    {
+      "name": "Common Bond",
+      "requirements": [
+        "Novice", "Wild Card", "Spirit d8+"
+      ],
+      "details": "This Edge signifies a special link between close companions--such as a typical party.  It doesn't matter whether or not the characters get along perfectly or not, they've just formed a close and common bond during their epic adventures.  A character with this Edge may freely give his bennies to any other Wild Card he can communicate with.  This represents the character giving his verbal or spiritual support to the ally.  The player should say what his character is doing to give the support.  The gesture could be as complex as a rousing speech, or as simple as a knowing nod."
+    },
+    {
+      "name": "Connections",
+      "requirements": [
+        "Novice"
+      ],
+      "details": "Whether it's to the Feds, the cops, the Mob, or some big corporation, your heroine knows someone on the inside--someone who is willing to lend her a hand on occasion (usually once per game session).  This Edge may be taken more than once, but each time must be applied to a different organization.  The GM should also ensure this organization is limited toa  single, unique organization.  A hero may, for instance, have Connections (US Army), but he shouldn't have a blanket Connection (Military).  To use a character's Connection requires that she first get in touch with one of her contacts.  This requires a Streetwise roll.  Failure means the particular contact wasn't available, their cell phone wasn't on, or they were otherwise tied up.  Once in contact, the hero must make a Persuasion roll.  The GM should feel free to modify both the Persuasion roll and any results based on the circumstances.  A failure indicates the heroine's contacts just couldn't come through this time, or perhaps just weren't persuaded that their help was really necessary.  On a success the contact might share information, but won't do anything too risky to help.  On a raise, the contact is willing to leark sensitive information, but stops short of outright betrayal.  Two or more raises means the heroine has pushed the right buttons and can count on serious help.  The Connection will risk serious consequences for the heroine.  If she needs financial assistance, the contact may provide a little more than he's comfortable with.  If the heroine asks for muscle, the contact delivers either one expert or five average fighter-types for the contact's particular organization."
+    },
+    {
+      "name": "Strong Willed",
+      "requirements": [
+        "Novice", "Intimidate d6+", "Taunt d6+"
+      ],
+      "details": "Characters with strong willpower use their voice, steely stares, or quick wits to unnerve their opponents.  Strong Willed adds +2 to a character's Intimidate and Taunt rolls, as well as his Spirit and Smarts rolls when resisting Tests of Will attacks."
+    }
+  ],
+  "weird_edges": [
+    {
+      "name": "Beast Bond",
+      "requirements": [
+        "Novice"
+      ],
+      "details": "Some heroes can exert incredible will over their animal companion.  These characters may spend their own bennies for any animals under their control, including mounts, pet dogs, familiars, and so on."
+    },
+    {
+      "name": "Beast Master",
+      "requirements": [
+        "Novice", "Spirit d8+"
+      ],
+      "details": "Animals like your hero, and won't attack him unless he attacks them first or they are enraged for some reason.  His \"animal magnetism\" is so great he's attracted a loyal animal of some sort as well.  This is typically a skag or a bloodwing, though the GM may allow other companions if it fits the setting.  If the beast is killed, another comes in 2d6 days if possible.  The beast gains a level for every other level its master gains."
+    },
+    {
+      "name": "Danger Sense",
+      "requirements": [
+        "Novice"
+      ],
+      "details": "Your hero can sense when something bad is about to happen.  Anytime he's about to be the victim of a surprise attack, ambush, or other nasty surprise, he gets a Notice roll at -2 just before the attack or event occurs.  If successful, the character knows something is about to happen and may take appropriate action against it.  This means the hero is on Hold for the first round of combat.  Should the hero fail his roll, he still follows the normal Surprise rules, if applicable."
+    },
+    {
+      "name": "Healer",
+      "requirements": [
+        "Novice", "Spirit d8+"
+      ],
+      "details": "A character with this Edge adds +2 to all Healing rolls, whether natural or magical in nature.  Up to five companions traveling with a Healer add the bonus to their natural healing rolls as well."
+    }
+  ],
+  "wild_card_edges": [
+    {
+      "name": "Dead Shot",
+      "requirements": [
+        "Seasoned", "Wild Card", "Shooting or Throwing d10+"
+      ],
+      "details": "The character doubles his total damage when making a successful Shooting or Throwing attack this round."
+    },
+    {
+      "name": "Mighty Blow",
+      "requirements": [
+        "Seasoned", "Wild Card", "Fighting d10+"
+      ],
+      "details": "The character doubles his total damage when making a successful Fighting attack this round."
+    }
+  ],
+  "legendary_edges": [
+    {
+      "name": "Followers",
+      "requirements": [
+        "Legendary", "Wild Card"
+      ],
+      "details": "Heroes often acquire dedicated warbands, \"merry men,\" or others who voluntarily follow the hero on his adventures.  Each time this Edge is chosen, 5 followers join the hero's band.  Casualties are not automatically replaced, so a hero may need to choose this Edge again on occasion to replenish his losses.  The followers must have some way to eat and earn income, and generally want a piece of whatever loot, treasure, or other rewards the hero acquires.  Otherwise, they are completely dedicated to their idol and risk their lives for him under any normal conditions.  In general, they won't knowingly throw their lives away, but special circumstances or those who have been with the hero for a few years might.  The GM determines the followers' statistics, but in general, use the Soldier archetype.  Followers generally come with only basic equipment depending on their particular setting.  The hero must purchase any additional equipment for his Followers himself."
+    },
+    {
+      "name": "Professional",
+      "requirements": [
+        "Legendary", "d12 in affected Trait"
+      ],
+      "details": "The character is an expert at a particular Trait.  His Trait becomes d12+1.  This Edge may be selected more than once, but it may never applied to the same Trait twice."
+    },
+    {
+      "name": "Expert",
+      "requirements": [
+        "Legendary", "Professional in affected Trait"
+      ],
+      "details": "The character is an expert at a particular Trait.  His Trait becomes d12+2.  This Edge may be selected more than once, but it may never applied to the same Trait twice."
+    },
+    {
+      "name": "Master",
+      "requirements": [
+        "Legendary", "Wild Card", "Expert in affected Trait"
+      ],
+      "details": "The character's Wild Die increases to a d10 when rolling a particular Trait of his choice.  This Edge may be chosen multiple times, though it only affects a particular Trait once."
+    },
+    {
+      "name": "Sidekick",
+      "requirements": [
+        "Legendary", "Wild Card"
+      ],
+      "details": "A character who triumphs over evil time and time again becomes an inspiration to others.  Eventually one of these young crusaders may attempt to join the hero in his epic quests.  The hero gains a Novice Rank sidekick.  The sidekick is a Wild Card, gains experience as usual, and has abilities that complement or mimic his hero's.  In general, the player character should control his sidekick just like any other allied character.  Of course, the sidekick may occasionally cause trouble.  The player should be prepared for his \"Edge\" to occasionally become a \"Hindrance.\"  If the sidekick dies, he isn't replaced unless the hero chooses this Edge again."
+    },
+    {
+      "name": "Tough As Nails",
+      "requirements": [
+        "Legendary"
+      ],
+      "details": "Your hero is a grizzled veteran.  Increase his Toughness by +1."
+    },
+    {
+      "name": "Improved Tough As Nails",
+      "requirements": [
+        "Legendary", "Tough As Nails"
+      ],
+      "details": "Increase your hero's Toughness by an additional +1."
+    },
+    {
+      "name": "Weapon Master",
+      "requirements": [
+        "Legendary", "Fighting d12"
+      ],
+      "details": "Increase your hero's Parry by +1."
+    },
+    {
+      "name": "Improved Weapon Master",
+      "requirements": [
+        "Legendary", "Weapon Master"
+      ],
+      "details": "Increase your hero's Parry by an additional +1."
     }
   ]
 }
