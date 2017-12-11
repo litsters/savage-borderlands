@@ -1,0 +1,44 @@
+{
+  "powers": [
+    {
+      "name": "Elemental Cloud",
+      "rank": "Seasoned",
+      "modifier": "-2",
+      "range": "24/48/96",
+      "duration": "3 rounds",
+      "description": "When a player chooses this Power for his character, he must decide which element the cloud is made of.  The available options are: corrosive, incendiary, shock, or slag.  To use this Power, the Siren places a Medium Burst Template within the allowed range and makes an Arcane roll with the relevant modifiers.  On a success, an elemental cloud appears inside the template.  All creatures entering or starting their turn inside it suffer 3d6 damage, and one additional level of elemental damage of the type selected by the player upon choosing this Power.  You may choose this Power multiple times in order to be able to use different cloud types.  Additional Effect: For each additional -1 penalty to her Arcane roll, the Siren may choose to inflict one additional level of elemental damage."
+    },
+    {
+      "name": "Healing",
+      "rank": "Novice",
+      "modifier": "",
+      "range": "Touch",
+      "duration": "Instant",
+      "description": "Healing repairs recent bodily damage.  It must be used within the \"golden hour,\" though, for it has no effect on wounds more than one hour old.  For Wild Cards, each use of the healing power removes the last wound the target has suffered.  The roll suffers a penalty equal to the victim's wounds (in addition to any the caster might be suffering herself).  For Extras, the GM must first determine if the ally is dead.  If so, no Healing may be attempted.  If not, a successful Arcane skill roll returns the ally to the game Shaken.  Healing can also cure poison and disease if used within 10 minutes of the event."
+    },
+    {
+      "name": "Hyperphase",
+      "rank": "Novice",
+      "modifier": "-1 (-1 per additional range increment)",
+      "range": "Pace",
+      "duration": "Instant",
+      "description": "Hyperphase allows the Siren to disappear and almost instantly reappear in another location.  Upon disappearing and reappearing, she causes damage to enemies around her.  In order to disappear, the Siren must make an Arcane roll with a cumulative -1 modifier for each range increment she wants to cover before reappearing.  If she makes it, she inflicts 2d6 damage to all enemies in a Medium Burst Template centered on the square she occupies when she disappears.  She then reappears on a square of her choice and inflicts 2d6 damage to all enemies in a Medium Burst Template centered on her new location.  The Siren must choose her destination square according to the following rules:  The path between her original location and her destination must be clear, as she in fact walks to it at extreme speed--still, she ignores difficult terrain and can even walk on water; her destination square must be within the range chosen to determine the modifier to her Arcane roll.  Using this Power counts as the Siren's movement for the round.  The Arcane roll made to use this Power does not count as an action when checking for multi-action penalties.  Enemies adjacent to the Siren do not get a free attack when she leaves her square through the use of Hyperphase."
+    },
+    {
+      "name": "Phaselock",
+      "rank": "Novice",
+      "modifier": "-1",
+      "range": "Smarts",
+      "duration": "3, can be maintained",
+      "description": "This Power allows the Siren to trap a target inside a sphere of energy.  Her Arcane roll is opposed to the target's Agility roll.  With a success, the target is partially locked and takes a -2 penalty to its Pace and to all its Agility or Strength-related skill rolls.  With a raise, it is completely locked inside the sphere and cannot move or use its Agility or Strength-related skills."
+    },
+    {
+      "name": "Resilience",
+      "rank": "Novice",
+      "modifier": "",
+      "range": "Touch",
+      "duration": "3 (1/round)",
+      "description": "Resilience creates a field of magical protection around the Siren, effectively giving her Armor.  Success grants the recipient 2 points of Armor.  A raise grants 4 points of Armor."
+    }
+  ]
+}
