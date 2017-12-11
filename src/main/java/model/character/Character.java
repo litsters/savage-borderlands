@@ -1,111 +1,60 @@
 package model.character;
 
-import database.dao.CharacterDao;
-import database.fileStructure.PathMaster;
-import security.Encryption;
-
-import java.io.File;
-import java.security.NoSuchAlgorithmException;
-
 public class Character{
-    private String name;
-    private String klass;
-    private String portrait;
-    private String passwordHash;
-
-    private String currentAuthcode;
+    private CharacterName name;
+    private CharacterClass klass;
+    private CharacterPortrait portrait;
+    private CharacterAuthentication authentication;
 
     public Character(){
-        name = null;
-        klass = null;
-        portrait = null;
-        passwordHash = null;
-        currentAuthcode = null;
+        name = new CharacterName();
+        klass = new CharacterClass();
+        portrait = new CharacterPortrait();
+        authentication = new CharacterAuthentication();
     }
 
     public String getName() {
-        return name;
+        return name.getValue();
     }
 
     public void setName(String name) throws InvalidInputException {
-        if(!isValidName(name)) throw new InvalidInputException("Invalid name");
-        this.name = name;
-    }
-
-    public boolean isValidName(String name){
-        if(name == null || name.length() == 0) return false;
-        if(CharacterDao.get().getCharacter(name) != null) return false;
-        else return true;
+        this.name.setValue(name);
     }
 
     public String getKlass() {
-        return klass;
+        return klass.getValue();
     }
 
     public void setKlass(String klass) throws InvalidInputException {
-        if(!isValidClass(klass)) throw new InvalidInputException("Invalid class");
-        this.klass = klass;
-    }
-
-    public boolean isValidClass(String klass){
-        if(klass == null || klass.length() == 0) return false;
-        else return true;
+        this.klass.setValue(klass);
     }
 
     public String getPortrait() {
-        return portrait;
+        return portrait.getValue();
     }
 
     public void setPortrait(String portrait) throws InvalidInputException {
-        if(!isValidPortrait(portrait)) throw new InvalidInputException("Invalid portrait");
-        this.portrait = portrait;
+        this.portrait.setValue(portrait);
     }
 
-    public boolean isValidPortrait(String portrait){
-        if(portrait == null || portrait.length() == 0) return false;
-        // Verify that file exists
-        File verification = new File(PathMaster.getPortraitRoot() + portrait);
-        if(!verification.exists()) return false;
-        return true;
+    public void setPassword(String password) throws InvalidInputException{
+        this.authentication.setPassword(password);
     }
 
-    public void setPassword(String password) throws InvalidInputException {
-        if(!isValidPassword(password)) throw new InvalidInputException("Invalid password");
-        try{
-            passwordHash = Encryption.get().hashPassword(password);
-        }catch(NoSuchAlgorithmException e){
-            passwordHash = password;
-        }
+    public boolean isCorrectPassword(String password){
+        return authentication.authenticate(password);
     }
 
-    public boolean isValidPassword(String password){
-        if(password == null || password.length() == 0) return false;
-        else return true;
-    }
+    public String getAuthcode(){return authentication.getAuthcode();}
 
-    public boolean correctPassword(String passwordAttempt){
-        try{
-            passwordAttempt = Encryption.get().hashPassword(passwordAttempt);
-        }catch(NoSuchAlgorithmException e){
-
-        }
-        return passwordAttempt.matches(passwordHash);
-    }
-
-    public String getCurrentAuthcode() {
-        return currentAuthcode;
-    }
-
-    public void setCurrentAuthcode(String currentAuthcode) {
-        this.currentAuthcode = currentAuthcode;
-    }
+    public void setAuthcode(String authcode){authentication.setAuthcode(authcode);}
 
     @Override
     public int hashCode(){ return name.hashCode();}
 
     @Override
     public String toString(){
-        return " Name: " + name.toString();
+        return name.getValue();
     }
 
     @Override
@@ -113,7 +62,6 @@ public class Character{
         if(o == null) return false;
         if(!(o instanceof Character)) return false;
         Character other = (Character)o;
-        if(!other.name.matches(this.name)) return false;
-        return true;
+        return other.getName().matches(this.getName());
     }
 }

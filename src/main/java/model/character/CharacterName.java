@@ -9,9 +9,8 @@ public class CharacterName {
 
     private String value;
 
-    public CharacterName(String value) throws InvalidInputException{
-        if(isValid(value)) this.value = value.trim();
-        else throw new InvalidInputException("Invalid name: " + value);
+    public CharacterName(){
+        this.value = null;
     }
 
     public static boolean isValid(String value){
@@ -21,6 +20,11 @@ public class CharacterName {
         Pattern p = Pattern.compile("[^a-z0-9\\s\\-\\']", Pattern.CASE_INSENSITIVE);
         Matcher m = p.matcher(value);
         return !m.find();
+    }
+
+    public void setValue(String value) throws InvalidInputException{
+        if(!isValid(value)) throw new InvalidInputException("Invalid name: " + value);
+        else this.value = value;
     }
 
     public String getValue() {

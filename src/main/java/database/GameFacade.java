@@ -45,10 +45,10 @@ public class GameFacade {
     public String login(String name, String passwordAttempt){
         Character character = CharacterDao.get().getCharacter(name);
         if(character == null) return null;
-        if(!character.correctPassword(passwordAttempt)) return null;
+        if(!character.isCorrectPassword(passwordAttempt)) return null;
         else {
             String authCode = AuthcodeGenerator.get().generateAuthcode();
-            character.setCurrentAuthcode(authCode);
+            character.setAuthcode(authCode);
             CharacterDao.get().addCharacter(character);
             return authCode;
         }
